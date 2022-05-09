@@ -1,13 +1,41 @@
+/* GLOBAL SETTINGS */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: #060f14;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* App.js */
+.App {
+  text-align: center;
+  color: #f8e9e9;
+}
+
+/* Main and Component Sections */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  margin: 2rem;
+}
+
+main {
+  margin: 40vh;
+}
+
+/* section {
+  
+} */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
