@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import Project from './components/Project';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -8,11 +10,13 @@ function App() {
     <div className="App">
       <Header></Header>
       <main>
-        <Project></Project>
+        <About></About>
+        <Portfolio></Portfolio>
+        <Contact></Contact>
       </main>
       <Footer></Footer>
     </div>
   );
-}
+};
 
 export default App;

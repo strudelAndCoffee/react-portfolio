@@ -1,10 +1,14 @@
+// HEADER
+
 import React from 'react';
 import Navigation from '../Navigation';
 
 function Header() {
     return(
         <header>
-            This is the Header
+            <h1>
+                Stevie Trudell
+            </h1>
             <Navigation></Navigation>
         </header>
     );

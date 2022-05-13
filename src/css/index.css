@@ -1,41 +1,85 @@
 /* GLOBAL SETTINGS */
+
+:root {
+  --bg-color: #04080a;
+  --txt-color: #f8e9e9;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  background-color: #060f14;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* App.js */
+/* App.js and Main */
 .App {
-  text-align: center;
-  color: #f8e9e9;
+  color: var(--txt-color);
 }
 
-/* Main and Component Sections */
+main {
+  padding: 10vh 0;
+  background-color: black;
+}
+
+/* Header Component */
 header {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 10vh;
+  border-bottom: 1px solid white;
+  background-color: var(--bg-color);
 }
 
+header h1 {
+  display: absolute;
+  float: left;
+  width: 30vw;
+  text-align: center;
+  padding-left: 5vw;
+}
+
+/* Navigation Component */
 nav {
-  margin: 2rem;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
-main {
-  margin: 40vh;
+/* About Component */
+/* .About {} */
+
+/* Contact Component */
+/* .Contact {} */
+
+/* Portfolio Component */
+.Portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-/* section {
-  
-} */
+/* Project Component */
+.Project {
+  border: 1px solid white;
+  height: 300px;
+  width: 300px;
+  margin: 30px;
+}
 
+/* Footer Component */
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  border-top: 1px solid white;
+  height: 4vh;
+  padding-top: 1vh;
+  text-align: center;
+  background-color: var(--bg-color);
 }
