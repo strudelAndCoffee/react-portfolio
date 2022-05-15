@@ -2,12 +2,23 @@
 
 import React from 'react';
 
-function Project() {
+function Project(props) {
+    const {
+        imgSrc,
+        imgAlt,
+        appTitle,
+        appUrl,
+        githubUrl
+    } = props;
+
     return(
         <article className="Project">
-            <a>app link</a>
-            <br />
-            <a>github link</a>
+            <img 
+                src={imgSrc}
+                alt={imgAlt}
+            />
+            <a href={appUrl}>{appTitle}</a>
+            <a href={githubUrl}>GitHub Repository</a>
         </article>
     );
 };
