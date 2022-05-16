@@ -16,14 +16,14 @@ function About() {
             a full and rewarding life in the city I love.
             <br />
             <br />
-            I have been a musician and audio recording/mixing engineer for over a decade, and will never retire
-            from pursuing those passions, but my work ethic and ambition reaches far beyond the scope working
-            professionally in the music business.
+            I have been a musician and recording/mixing engineer for over a decade, and will never retire
+            from pursuing those passions, but my work ethic and ambition pushes beyond the scope that working
+            professionally in the music business offers.
             <br />
             <br />
             This is why I am devoting my time and intellect to grow and excel in the diverse field of web
-            development. I have learned that designing and building websites is as engaging and creatively
-            stimulating an experience as performing music!
+            development! I have learned that designing and building websites is as an engaging and creatively
+            stimulating experience as performing music.
             <br />
           </div>
         </fieldset>
