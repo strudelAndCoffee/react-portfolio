@@ -60,13 +60,22 @@ header h1 a:hover {
   text-shadow: none;
 }
 
-/* Navigation Component */
 nav {
   height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-end;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+}
+
+.active {
+  text-decoration: underline;
+  color: white;
+  font-size: 1.4rem;
 }
 
 /* About Component */

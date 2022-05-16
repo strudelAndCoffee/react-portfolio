@@ -11,18 +11,18 @@ function Header({ currentPage, pageChangeHandler }) {
                 </a>
             </h1>
             <nav>
-                <a href="#About"
+                <a href='#About'
                     onClick={() => pageChangeHandler('About')}
-                    className="nav-link">About</a>
-                <a href="#Portfolio"
+                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link' }>About</a>
+                <a href='#Portfolio'
                     onClick={() => pageChangeHandler('Portfolio')}
-                    className="nav-link">Portfolio</a>
-                <a href="#Contact"
+                    className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link' }>Portfolio</a>
+                <a href='#Contact'
                     onClick={() => pageChangeHandler('Contact')}
-                    className="nav-link">Contact</a>
-                <a href="#Resume" 
+                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link' }>Contact</a>
+                <a href='#Resume' 
                     onClick={() => pageChangeHandler('Resume')}
-                    className="nav-link">Resume</a>
+                    className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link' }>Resume</a>
             </nav>
         </header>
     );
