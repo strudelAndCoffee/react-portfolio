@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 
 function Contact() {
 
+    // error message that appears above submit button in form
     const [ errorMsg, setErrorMsg ] = useState('');
 
     // when any form input blurs, check if value exists

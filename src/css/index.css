@@ -84,17 +84,15 @@ nav {
   font-size: 1.2rem;
 }
 
-/* About Component */
-/* .About {} */
-
-/* Contact Component */
-.Contact {
+/* Form Components */
+.About, .Contact, .Resume {
   padding: 0 3vw;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 form {
   width: 94vw;
+  background-color: var(--bg-color);
 }
 
 .input-container {
@@ -110,13 +108,27 @@ legend {
   margin-left: 20px;
 }
 
+label {
+  font-size: 1.1rem;
+}
+
 .form-input {
   width: 95%;
+  height: 1.6rem;
+  border-radius: 5px;
 }
 
 .form-text {
   width: 95%;
   height: 22vh;
+  border-radius: 5px;
+}
+
+.form-btn {
+  width: 120px;
+  height: 33px;
+  font-size: 1.2rem;
+  border-radius: 5px;
 }
 
 /* Portfolio Component */
@@ -126,6 +138,7 @@ legend {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 /* Project Component */
@@ -162,4 +175,62 @@ footer {
   padding-top: 1vh;
   text-align: center;
   background-color: var(--bg-color);
+}
+
+@media screen and (min-width: 720px) {
+
+  /* Header */
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  
+  header h1 {
+    width: 33vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    width: 67%;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  .active {
+    font-size: 1.3rem;
+  }
+
+  /* Forms */
+  .Contact, .About, .Resume {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  form {
+    width: 680px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+  }
+  
+  .active {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    height: 35px;
+  }
 }
