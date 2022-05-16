@@ -63,7 +63,6 @@ function About() {
                   <br />
                   ~Stevie, a.k.a. strudelAndCoffee
                 </div>
-                <br />
               </div>
 
             </div>
