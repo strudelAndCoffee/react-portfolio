@@ -8,4 +8,4 @@ This is my portfolio. It includes About and Resume sections, a Contact form, and
 
 This webpage was created using React and Node.JS. All code is authored by Stevie Trudell (strudelAndCoffee).
 
-![Portfolio section showing several links to apps](https://github.com/strudelAndCoffee/react-portfolio/blob/main/src/assets/images/demo-screenshot.png)
+![Portfolio section showing several links to apps](https://github.com/strudelAndCoffee/react-portfolio/blob/main/src/assets/images/demo-screenshot-2.png)
