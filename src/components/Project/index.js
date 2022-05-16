@@ -17,8 +17,10 @@ function Project(props) {
                 src={imgSrc}
                 alt={imgAlt}
             />
-            <a href={appUrl}>{appTitle}</a>
-            <a href={githubUrl}>GitHub Repository</a>
+            <a href={appUrl}>
+                <h3>{appTitle}</h3>
+            </a>
+            <a href={githubUrl}>View GitHub Repository</a>
         </article>
     );
 };

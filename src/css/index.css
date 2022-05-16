@@ -12,6 +12,16 @@ body {
     sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--txt-color);
+  margin: 3px 0;
+}
+
+a:visited {
+  color: var(--txt-color);
+}
+
 /* App.js and Main */
 .App {
   color: var(--txt-color);
@@ -66,10 +76,26 @@ nav {
 
 /* Project Component */
 .Project {
-  border: 1px solid white;
-  height: 300px;
   width: 300px;
+  border: 1px solid white;
+  box-shadow: 0 1px 5px white;
   margin: 30px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+.Project img {
+  height: 270px;
+  width: 300px;
+}
+
+.Project h3 {
+  margin: 5px 0;
+}
+
+.Project a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 /* Footer Component */
