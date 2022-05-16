@@ -95,7 +95,7 @@ form {
   background-color: var(--bg-color);
 }
 
-.input-container {
+fieldset {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -171,10 +171,15 @@ footer {
   bottom: 0;
   width: 100%;
   border-top: 1px solid white;
-  height: 25px;
+  height: 35px;
   padding-top: 1vh;
   text-align: center;
   background-color: var(--bg-color);
+}
+
+.footer-link {
+  margin: 0 10px;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 720px) {
@@ -219,7 +224,7 @@ footer {
 
 @media screen and (min-width: 1080px) {
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 
   .nav-link {
@@ -231,6 +236,10 @@ footer {
   }
 
   footer {
-    height: 35px;
+    height: 45px;
+  }
+
+  .footer-link {
+    font-size: 1.3rem;
   }
 }

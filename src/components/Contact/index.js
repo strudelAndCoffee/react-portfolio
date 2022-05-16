@@ -26,7 +26,7 @@ function Contact() {
     return(
         <section className="Contact">
             <form id="contact-form" onSubmit={submitHandler}>
-                <fieldset className="input-container">
+                <fieldset>
                     <legend>Contact Stevie</legend>
                     <label htmlFor="name">Name </label>
                     <input type="text" name="name" className="form-input" onBlur={inputHandler} />

@@ -17,7 +17,7 @@ function Project(props) {
                 src={imgSrc}
                 alt={imgAlt}
             />
-            <a href={appUrl}>
+            <a href={appUrl} target="_blank" rel="noreferrer">
                 <h3>{appTitle}</h3>
             </a>
             <a href={githubUrl}>View GitHub Repository</a>
