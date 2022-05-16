@@ -6,4 +6,4 @@
 
 This webpage was created using React.
 
-![Portfolio section showing several links to apps](https://github.com/strudelAndCoffee/react-portfolio/blob/main/assets/images/demo-screenshot.png)
+![Portfolio section showing several links to apps](https://github.com/strudelAndCoffee/react-portfolio/blob/main/src/assets/images/demo-screenshot.png)
