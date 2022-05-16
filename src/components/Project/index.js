@@ -14,7 +14,7 @@ function Project(props) {
     return(
         <article className="Project">
             <img 
-                src={require(`../../assets/images/${imgSrc}`)}
+                src={`../../assets/images/${imgSrc}`}
                 alt={imgAlt}
             />
             <a href={appUrl} target="_blank" rel="noreferrer">
