@@ -28,6 +28,9 @@ function Contact() {
             <form id="contact-form" onSubmit={submitHandler}>
                 <fieldset>
                     <legend>Contact Stevie</legend>
+                    <div>
+                        <small><em>Note: this form is currently out of order.</em></small>
+                    </div>
                     <label htmlFor="name">Name </label>
                     <input type="text" name="name" className="form-input" onBlur={inputHandler} />
                     <br />

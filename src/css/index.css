@@ -1,17 +1,21 @@
 /* GLOBAL SETTINGS */
 
 :root {
-  --bg-color: #04080a;
-  --txt-color: #f8e9e9;
+  --bg-color: #0c0a16;
+  --bg-dk-color: #020405;
+  --txt-color: #e2ead8;
+  --txt-dk-color: #8df3fc;
 }
 
-body {
+* {
+  font-family: 'Inter', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  background-color: black;
   line-height: 1.5;
+}
+
+body { 
+  background-color: var(--bg-dk-color);
+  font-size: 1.1rem;
 }
 
 .italic {
@@ -25,8 +29,8 @@ a {
 }
 
 a:hover {
-  color: white;
-  text-shadow: 0 0 2px white;
+  color: var(--txt-dk-color);
+  text-shadow: 0 1px 1px black;
 }
 
 a:visited {
@@ -44,7 +48,7 @@ li {
 
 main {
   padding: 10vh 0;
-  background-color: black;
+  background-color: var(--bg-dk-color);
 }
 
 /* Header Component */
@@ -68,6 +72,10 @@ header h1 {
   padding: 0;
 }
 
+header h1 a {
+  text-shadow: 1px 1px 2px black;
+}
+
 header h1 a:hover {
   color: var(--txt-color);
   text-shadow: none;
@@ -84,13 +92,19 @@ nav {
 }
 
 .nav-link {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
-.active {
+.nav-link:hover {
+  color: var(--txt-dk-color);
+  text-shadow: 0 1px 1px black;
+}
+
+.nav-link.active {
   text-decoration: underline;
-  color: white;
-  font-size: 1.2rem;
+  color: var(--txt-dk-color);
+  text-shadow: 0 1px 2px black;
+  font-size: 1.3rem;
 }
 
 /* Form Components */
@@ -114,16 +128,49 @@ fieldset {
 }
 
 legend {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-left: 20px;
 }
 
+/* About Form */
+.bio-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.bio-form-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.bio-form-bottom {
+  width: 100%;
+}
+
+.bio-img {
+padding: 0 5px 5px 5px;
+}
+
+.bio-img img {
+  height: 175x;
+  width: 175px;
+}
+
 .bio-text {
-  padding: 0 5px;
+  padding: 0 0 0 5px;
+}
+
+.bio-sig {
+  text-align: center;
 }
 
 label {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .form-input {
@@ -139,10 +186,14 @@ label {
 }
 
 .form-btn {
+  margin-top: 8px;
   width: 120px;
-  height: 33px;
   font-size: 1.2rem;
   border-radius: 5px;
+}
+
+.form-btn:hover {
+  cursor: pointer;
 }
 
 /* Portfolio Component */
@@ -163,6 +214,7 @@ label {
   margin: 30px;
   padding-bottom: 4px;
   text-align: center;
+  background-color: var(--bg-color);
 }
 
 .Project img {
@@ -174,9 +226,9 @@ label {
   margin: 5px 0;
 }
 
-.Project a:hover {
+.link:hover {
   text-decoration: underline;
-  color: white;
+  color: var(--txt-dk-color);
 }
 
 /* Footer Component */
@@ -194,6 +246,10 @@ footer {
 .footer-link {
   margin: 0 10px;
   font-size: 1.2rem;
+}
+
+.footer-link:hover {
+  color: var(--txt-dk-color);
 }
 
 @media screen and (min-width: 720px) {
@@ -214,11 +270,11 @@ footer {
   }
 
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
   .active {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   /* Forms */
@@ -239,11 +295,11 @@ footer {
   }
 
   .nav-link {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   
   .active {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   footer {

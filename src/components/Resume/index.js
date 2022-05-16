@@ -12,11 +12,12 @@ function Resume() {
                         <h3>Languages / Technologies</h3>
                         <ul>
                             <li>JavaScript (ES6) / HTML / CSS</li>
-                            <li>3rd Party APIs / Frameworks (Bootstrap, Bulma, jQuery, etc.)</li>
+                            <li>3rd Party APIs / Frameworks (Bootstrap, jQuery, handlebars.JS, etc.)</li>
                             <li className="italic">Comprehending Documentation</li>
-                            <li>Node.JS / Express.JS / AJAX</li>
+                            <li>Node.JS / Express / Jest</li>
                             <li>SQL / MongoDB</li>
                             <li>React</li>
+                            <li>GraphQL / AJAX / RESTful APIs</li>
                         </ul>
                         <h3>Skills</h3>
                         <ul>
