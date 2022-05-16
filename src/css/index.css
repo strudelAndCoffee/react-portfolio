@@ -11,6 +11,11 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   background-color: black;
+  line-height: 1.5;
+}
+
+.italic {
+  font-style: italic;
 }
 
 a {
@@ -28,6 +33,10 @@ a:visited {
   color: var(--txt-color);
 }
 
+li {
+  margin-bottom: 5px;
+}
+
 /* App.js and Main */
 .App {
   color: var(--txt-color);
@@ -43,7 +52,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 78px;
   border-bottom: 1px solid white;
   background-color: var(--bg-color);
   padding-bottom: 3px;
@@ -65,7 +74,7 @@ header h1 a:hover {
 }
 
 nav {
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
   width: 100%;
   display: flex;
@@ -92,7 +101,7 @@ nav {
 
 form {
   width: 94vw;
-  background-color: var(--bg-color);
+  margin: 0 10px;
 }
 
 fieldset {
@@ -101,11 +110,16 @@ fieldset {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+  background-color: var(--bg-color);
 }
 
 legend {
   font-size: 1.4rem;
   margin-left: 20px;
+}
+
+.bio-text {
+  padding: 0 5px;
 }
 
 label {
@@ -193,9 +207,6 @@ footer {
   
   header h1 {
     width: 33vw;
-    text-align: center;
-    margin: 0;
-    padding: 0;
   }
 
   nav {
