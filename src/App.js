@@ -7,24 +7,33 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
-  const [pages] = useState([
-    { name: 'about' },
-    { name: 'portfolio' },
-    { name: 'contact' },
-    { name: 'resume' }
-  ]);
-  const [currentPage, setCurrentPage] = useState(pages[0]);
+  const [currentPage, setCurrentPage] = useState('About');
+
+  const renderPage = () => {
+    if (currentPage === 'About') {
+      return <About />;
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+    return <Resume />;
+  };
+
+  const pageChangeHandler = (page) => setCurrentPage(page);
 
   return (
     <div className="App">
-      <Header></Header>
+      <Header
+        currentPage={currentPage}
+        pageChangeHandler={pageChangeHandler}
+      />
       <main>
-        <About></About>
-        <Portfolio></Portfolio>
-        <Contact></Contact>
-        <Resume></Resume>
+        {renderPage()}
       </main>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 };
