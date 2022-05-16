@@ -1,23 +1,42 @@
 // CONTACT
 
-import React from 'react';
+import React, { useState } from 'react';
 
 function Contact() {
+
+    const [ errorMsg, setErrorMsg ] = useState('');
+
+    // when any form input blurs, check if value exists
+    function inputHandler(event) {
+        if (!event.target.value.length) {
+            setErrorMsg(`Please add your ${event.target.name}`);
+        } else {
+            setErrorMsg('');
+        }
+    };
+
+    // when form submit, send window alert
+    function submitHandler(event) {
+        event.preventDefault();
+        // no database set up for contact message handling
+        alert("We are unable to process your request at this time. You may contact Stevie using his email address listed below. Thank you!");
+    };
+
     return(
         <section className="Contact">
-            <form id="contact-form">
+            <form id="contact-form" onSubmit={submitHandler}>
                 <fieldset className="input-container">
                     <legend>Contact Stevie</legend>
-                    <label for="name">Name </label>
-                    <input type="text" id="name" className="form-input" />
+                    <label htmlFor="name">Name </label>
+                    <input type="text" name="name" className="form-input" onBlur={inputHandler} />
                     <br />
-                    <label for="email">Email </label>
-                    <input type="email" id="email" className="form-input" />
+                    <label htmlFor="email">Email </label>
+                    <input type="email" name="email" className="form-input" onBlur={inputHandler} />
                     <br />
-                    <label for="message">Message</label>
-                    <textarea id="message" className="form-text"></textarea>
-                    <br />
-                    <button type="submit" id="form-submit" className="form-btn">Submit</button>
+                    <label htmlFor="message">Message</label>
+                    <textarea name="message" className="form-text" onBlur={inputHandler}></textarea>
+                    <p>{errorMsg}</p>
+                    <button type="submit" className="form-btn">Submit</button>
                 </fieldset>
             </form>
         </section>

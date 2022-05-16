@@ -105,6 +105,11 @@ form {
   flex-wrap: nowrap;
 }
 
+legend {
+  font-size: 1.4rem;
+  margin-left: 20px;
+}
+
 .form-input {
   width: 95%;
 }
