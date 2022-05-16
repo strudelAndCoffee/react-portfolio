@@ -16,7 +16,9 @@ function About() {
       <form className="bio-form">
         
         <fieldset>
-          <legend>About Me</legend>
+          <legend>
+            <span className="color-2">About Me</span>
+          </legend>
 
             <div className="bio-form-top">
 

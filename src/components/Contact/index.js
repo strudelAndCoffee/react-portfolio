@@ -27,7 +27,9 @@ function Contact() {
         <section className="Contact">
             <form id="contact-form" onSubmit={submitHandler}>
                 <fieldset>
-                    <legend>Contact Stevie</legend>
+                    <legend>
+                        <span className="color-2">Contact</span>
+                    </legend>
                     <div>
                         <small><em>Note: this form is currently out of order.</em></small>
                     </div>

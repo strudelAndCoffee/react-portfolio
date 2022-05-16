@@ -7,7 +7,9 @@ function Resume() {
         <section className="Resume">
             <form>
                 <fieldset>
-                    <legend>Full Stack Web Development</legend>
+                    <legend>
+                        <span className="color-2">Full Stack Web Development</span>
+                    </legend>
                     <div className="bio-text">
                         <h3>Languages / Technologies</h3>
                         <ul>
