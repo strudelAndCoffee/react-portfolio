@@ -6,9 +6,7 @@ function Header({ currentPage, pageChangeHandler }) {
     return(
         <header>
             <h1>
-                <a href='/'>
-                    <span className="color-2"><em>Stevie Trudell</em></span>
-                </a>
+                <span className="color-2"><em>Stevie Trudell</em></span>
             </h1>
             <nav>
                 <a href='#About'

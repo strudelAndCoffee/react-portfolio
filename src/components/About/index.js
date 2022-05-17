@@ -44,15 +44,14 @@ function About() {
             <div className="bio-form-bottom">
 
               <div className="bio-text">
-                I have been a musician and recording/mixing engineer for over a decade, and will never retire
-                from pursuing those passions, but my work ethic and ambition pushes beyond the scope that working
-                in the music business offers.
+                I have been a musician and recording/mixing engineer for over a decade, but my work ethic and 
+                ambition pushes beyond the scope that working in the music business offers.
                 <br />
                 <br />
-                This is why I am devoting my time and talents to grow and excel in the diverse field of web
-                development. I am eager to engage fully in this new profession and offer my unique perspective,
-                as the problem solving and creativity involved in building websites and applications parallels the
-                process of creating music, both individually and collaboratively. 
+                This is why I am devoting my time and talents to grow in the diverse field of web development.
+                I am eager to engage fully in the profession and offer my unique perspective, people skills,
+                and problem solving approaches. I have found that the creativity involved in building websites
+                and applications parallels the process of creating music, both individually and collaboratively. 
                 <br />
                 <br />
                 To reach me directly, please click the Contact tab, or email me at my email address listed below.

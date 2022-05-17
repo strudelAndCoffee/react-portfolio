@@ -4,7 +4,7 @@
 
 ## Description
 
-This is my portfolio. It includes About and Resume sections, a Contact form, and a Portfolio page section displaying links to the apps that I have created.
+This is my portfolio. It includes About and Resume sections, a Contact form, and a Portfolio page displaying links to the apps that I have created.
 
 This webpage was created using React and Node.JS. All code is authored by Stevie Trudell (strudelAndCoffee).
 
