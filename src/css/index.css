@@ -60,9 +60,9 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 78px;
-  border-bottom: 1px solid white;
+  height: 80px;
   background-color: var(--bg-color);
+  box-shadow: 0 -1px 4px var(--txt-color);
   padding-bottom: 3px;
   display: flex;
   flex-direction: column;
@@ -213,8 +213,7 @@ label {
 /* Project Component */
 .Project {
   width: 300px;
-  border: 1px solid white;
-  box-shadow: 0 1px 5px white;
+  box-shadow: 0 0 2px var(--txt-color);
   margin: 30px;
   padding-bottom: 4px;
   text-align: center;
@@ -240,11 +239,11 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid white;
   height: 35px;
   padding-top: 1vh;
   text-align: center;
   background-color: var(--bg-color);
+  box-shadow: 0 1px 4px var(--txt-color);
 }
 
 .footer-link {
@@ -263,6 +262,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
+    height: 70px;
   }
   
   header h1 {
@@ -294,6 +294,10 @@ footer {
 }
 
 @media screen and (min-width: 1080px) {
+  header {
+    height: 60px;
+  }
+
   h1 {
     font-size: 2.1rem;
   }
@@ -304,10 +308,6 @@ footer {
   
   .active {
     font-size: 1.5rem;
-  }
-
-  footer {
-    height: 45px;
   }
 
   .footer-link {
