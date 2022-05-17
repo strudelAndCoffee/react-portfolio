@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.97204e21.css",
-    "main.js": "/react-portfolio/static/js/main.8a29aa35.js",
+    "main.css": "/react-portfolio/static/css/main.a4cba8f7.css",
+    "main.js": "/react-portfolio/static/js/main.85b4766e.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/demo-screenshot.png": "/react-portfolio/static/media/demo-screenshot.775ab5eacd554bde4b1c.png",
+    "static/media/demo-screenshot-2.png": "/react-portfolio/static/media/demo-screenshot-2.250b33c4ef3030a88b27.png",
     "static/media/spacex.png": "/react-portfolio/static/media/spacex.f4e9e34c5c405a8c7b2e.png",
     "static/media/travel-diary.png": "/react-portfolio/static/media/travel-diary.a26ef65061fea278e841.png",
     "static/media/portrait.png": "/react-portfolio/static/media/portrait.7c4db2fd582b2b699e42.png",
@@ -12,12 +12,12 @@
     "static/media/git-it-done.png": "/react-portfolio/static/media/git-it-done.4dd5e67d8d64e232a6ee.png",
     "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.870578e7a5e3351fbcf9.png",
     "index.html": "/react-portfolio/index.html",
-    "main.97204e21.css.map": "/react-portfolio/static/css/main.97204e21.css.map",
-    "main.8a29aa35.js.map": "/react-portfolio/static/js/main.8a29aa35.js.map",
+    "main.a4cba8f7.css.map": "/react-portfolio/static/css/main.a4cba8f7.css.map",
+    "main.85b4766e.js.map": "/react-portfolio/static/js/main.85b4766e.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97204e21.css",
-    "static/js/main.8a29aa35.js"
+    "static/css/main.a4cba8f7.css",
+    "static/js/main.85b4766e.js"
   ]
 }
