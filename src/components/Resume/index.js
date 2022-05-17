@@ -33,7 +33,7 @@ function Resume() {
             <form>
                 <fieldset>
                     <legend>
-                        <span className="color-2">Skills</span>
+                        <span className="color-2">Operations</span>
                     </legend>
                     <div className="bio-text">
                         <h3>Design / Architecture</h3>
