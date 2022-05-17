@@ -8,24 +8,47 @@ function Resume() {
             <form>
                 <fieldset>
                     <legend>
-                        <span className="color-2">Full Stack Web Development</span>
+                        <span className="color-2">Languages / Technologies</span>
                     </legend>
                     <div className="bio-text">
-                        <h3>Languages / Technologies</h3>
+                        <h3>Front End</h3>
                         <ul>
-                            <li>JavaScript (ES6) / HTML / CSS</li>
-                            <li>3rd Party APIs / Frameworks (Bootstrap, jQuery, handlebars.JS, etc.)</li>
-                            <li className="italic">Comprehending Documentation</li>
-                            <li>Node.JS / Express / Jest</li>
-                            <li>SQL / MongoDB</li>
+                            <li>Semantic HTML</li>
+                            <li>CSS / Bootstrap / Bulma</li>
+                            <li>JavaScript (ES6)</li>
+                            <li className="italic">Reading Documentation</li>
                             <li>React</li>
-                            <li>GraphQL / AJAX / RESTful APIs</li>
                         </ul>
-                        <h3>Skills</h3>
+                        <h3>Back End</h3>
                         <ul>
-                            <li>AGILE / OOP / TDD</li>
-                            <li>Model View Controller / Progressive Web Application</li>
+                            <li>Node.js / Jest / Handlebars</li>
+                            <li>Express / AJAX</li>
+                            <li>SQL / MongoDB</li>
+                            <li>GraphQL</li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset>
+                    <legend>
+                        <span className="color-2">Skills</span>
+                    </legend>
+                    <div className="bio-text">
+                        <h3>Design / Architecture</h3>
+                        <ul>
+                            <li className="italic">Comprehending Documentation</li>
+                            <li>REST APIs</li>
+                            <li>Model View Controller</li>
+                            <li>Progressive Web Applications</li>
                             <li>MERN Stack</li>
+                        </ul>
+                        <h3>Development Practices</h3>
+                        <ul>
+                            <li>AGILE</li>
+                            <li>OOP</li>
+                            <li>TDD</li>
                         </ul>
                     </div>
                 </fieldset>

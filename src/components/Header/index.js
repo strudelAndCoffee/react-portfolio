@@ -7,7 +7,7 @@ function Header({ currentPage, pageChangeHandler }) {
         <header>
             <h1>
                 <a href='/'>
-                    <span className="color-2">Stevie Trudell</span>
+                    <span className="color-2"><em>Stevie Trudell</em></span>
                 </a>
             </h1>
             <nav>

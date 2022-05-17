@@ -59,6 +59,7 @@ function Portfolio() {
                     appTitle={app.appTitle}
                     appUrl={app.appUrl}
                     githubUrl={app.githubUrl}
+                    key={app.appTitle}
                 ></Project>
             ))}
         </section>

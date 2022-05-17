@@ -33,7 +33,7 @@ function About() {
                 I am currently studying to become a full stack web developer at The University of Texas in Austin.
                 <br />
                 <br />
-                Austin has been my home since birth, and it is my dream to continue to work, play, and create here 
+                Austin has been my home my whole life, and it is my dream to continue to work, play, and create here 
                 in the city that I love.
                 <br />
                 <br />
@@ -49,13 +49,14 @@ function About() {
                 in the music business offers.
                 <br />
                 <br />
-                This is why I am devoting my time and intellect to grow and excel in the diverse field of web
-                development. I have learned that designing and building websites is as an engaging and creatively
-                stimulating experience as performing music!
+                This is why I am devoting my time and talents to grow and excel in the diverse field of web
+                development. I am eager to engage fully in this new profession and offer my unique perspective,
+                as the problem solving and creativity involved in building websites and applications parallels the
+                process of creating music, both individually and collaboratively. 
                 <br />
                 <br />
-                To reach me directly, please click the Contact tab, or email me at my address listed below. You can also
-                visit my GitHub and LinkedIn profiles through the links below.
+                To reach me directly, please click the Contact tab, or email me at my email address listed below.
+                You can also visit my GitHub and LinkedIn profiles.
                 <br />
                 <br />
                 <div className="bio-sig">
