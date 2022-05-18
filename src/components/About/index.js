@@ -33,8 +33,10 @@ function About() {
                 I am currently studying to become a full stack web developer at The University of Texas in Austin.
                 <br />
                 <br />
+                <span className="grow">
                 Austin has been my home my whole life, and it is my dream to continue to work, play, and create here 
                 in the city that I love.
+                </span>
                 <br />
                 <br />
               </div>

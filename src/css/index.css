@@ -152,7 +152,13 @@ legend {
   justify-content: center;
 }
 
+.grow {
+  position: absolute;
+  width: 85vw;
+}
+
 .bio-form-bottom {
+  margin-top: 75px;
   width: 100%;
 }
 
@@ -253,6 +259,23 @@ footer {
 
 .footer-link:hover {
   color: var(--txt-dk-color);
+}
+
+@media screen and (min-width: 418px) {
+  .bio-form-bottom {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 444px) {
+  .grow {
+    position: static;
+    width: 100%;
+  }
+
+  .bio-form-bottom {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 720px) {
