@@ -39,9 +39,10 @@ function Resume() {
                         <h3>Design / Architecture</h3>
                         <ul>
                             <li className="italic">Comprehending Documentation</li>
-                            <li>REST APIs</li>
+                            <li>RESTful APIs</li>
                             <li>Model View Controller</li>
                             <li>Progressive Web Applications</li>
+                            <li>Single Page Applications</li>
                             <li>MERN Stack</li>
                         </ul>
                         <h3>Development Practices</h3>
@@ -49,6 +50,7 @@ function Resume() {
                             <li>AGILE</li>
                             <li>OOP</li>
                             <li>TDD</li>
+                            <li>Git / GitHub</li>
                         </ul>
                     </div>
                 </fieldset>
