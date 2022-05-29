@@ -17,23 +17,23 @@ function App() {
         <main>
           <Routes>
             <Route 
-              path='/'
+              path='/react-portfolio/'
               element={<About />}
             />
             <Route
-              path='/about'
+              path='/react-portfolio/about'
               element={<About />}
             />
             <Route 
-              path='/portfolio'
+              path='/react-portfolio/portfolio'
               element={<Portfolio />}
             />
             <Route
-              path='/contact'
+              path='/react-portfolio/contact'
               element={<Contact />}
             />
             <Route 
-              path='/resume'
+              path='/react-portfolio/resume'
               element={<Resume />}
             />
             <Route
@@ -47,37 +47,5 @@ function App() {
     </Router>
   );
 };
-
-// function App() {
-//   const [currentPage, setCurrentPage] = useState('About');
-
-//   const renderPage = () => {
-//     if (currentPage === 'About') {
-//       return <About />;
-//     }
-//     if (currentPage === 'Portfolio') {
-//       return <Portfolio />;
-//     }
-//     if (currentPage === 'Contact') {
-//       return <Contact />;
-//     }
-//     return <Resume />;
-//   };
-
-//   const pageChangeHandler = (page) => setCurrentPage(page);
-
-//   return (
-//     <div className="App">
-//       <Header
-//         currentPage={currentPage}
-//         pageChangeHandler={pageChangeHandler}
-//       />
-//       <main>
-//         {renderPage()}
-//       </main>
-//       <Footer />
-//     </div>
-//   );
-// };
 
 export default App;
