@@ -1,26 +1,21 @@
 // HEADER
 
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
-function Header({ currentPage, pageChangeHandler }) {
+function Header(currentPage) {
     return(
         <header>
+            <Link to='/'>
             <h1>
-                <span className="color-2"><em>Stevie Trudell</em></span>
+                <span className='color-2'><em>Stevie Trudell</em></span>
             </h1>
+            </Link>
             <nav>
-                <a href='#About'
-                    onClick={() => pageChangeHandler('About')}
-                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link' }>About</a>
-                <a href='#Portfolio'
-                    onClick={() => pageChangeHandler('Portfolio')}
-                    className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link' }>Portfolio</a>
-                <a href='#Contact'
-                    onClick={() => pageChangeHandler('Contact')}
-                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link' }>Contact</a>
-                <a href='#Resume' 
-                    onClick={() => pageChangeHandler('Resume')}
-                    className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link' }>Resume</a>
+                <NavLink to='/about' className='nav-link' activeClassName='nav-link active'>About</NavLink>
+                <NavLink to='/portfolio' className='nav-link' activeClassName='nav-link active'>Portfolio</NavLink>
+                <NavLink to='/contact' className='nav-link' activeClassName='nav-link active'>Contact</NavLink>
+                <NavLink to='/resume' className='nav-link' activeClassName='nav-link active'>Resume</NavLink>
             </nav>
         </header>
     );

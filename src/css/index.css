@@ -96,7 +96,7 @@ nav {
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .nav-link:hover {
@@ -108,7 +108,7 @@ nav {
   text-decoration: underline;
   color: var(--txt-dk-color);
   text-shadow: 0 1px 2px black;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* Form Components */
@@ -261,6 +261,12 @@ footer {
   color: var(--txt-dk-color);
 }
 
+/* NoMatch Component */
+.nomatch {
+  text-align: center;
+  padding-top: 20vh;
+}
+
 @media screen and (min-width: 418px) {
   .bio-form-bottom {
     margin-top: 50px;
@@ -297,11 +303,11 @@ footer {
   }
 
   .nav-link {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   
   .active {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   /* Forms */
@@ -326,11 +332,11 @@ footer {
   }
 
   .nav-link {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   
   .active {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .footer-link {

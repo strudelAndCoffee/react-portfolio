@@ -7,6 +7,46 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import NoMatch from './components/NoMatch';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <main>
+          <Routes>
+            <Route 
+              path='/'
+              element={<About />}
+            />
+            <Route
+              path='/about'
+              element={<About />}
+            />
+            <Route 
+              path='/portfolio'
+              element={<Portfolio />}
+            />
+            <Route
+              path='/contact'
+              element={<Contact />}
+            />
+            <Route 
+              path='/resume'
+              element={<Resume />}
+            />
+            <Route
+              path='*'
+              element={<NoMatch />}
+            />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+};
 
 // function App() {
 //   const [currentPage, setCurrentPage] = useState('About');
