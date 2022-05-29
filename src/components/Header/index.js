@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-function Header(currentPage) {
+function Header() {
     return(
         <header>
             <Link to='/'>
