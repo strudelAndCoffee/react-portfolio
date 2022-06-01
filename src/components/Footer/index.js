@@ -1,18 +1,20 @@
 // FOOTER
 
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { brands, regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 function Footer() {
     return(
         <footer>
             <a href="https://github.com/strudelAndCoffee" target="_blank" rel="noreferrer" className="footer-link">
-                GitHub
+                <FontAwesomeIcon icon={brands('github')} />
             </a>
             <a href="https://www.linkedin.com/in/stevie-trudell-atx/" target="_blank" rel="noreferrer" className="footer-link">
-                LinkedIn
+                <FontAwesomeIcon icon={brands('linkedin')} />
             </a>
             <a href="mailto:strudelandcoffee@gmail.com" target="_blank" rel="noreferrer" className="footer-link">
-                Email
+                <FontAwesomeIcon icon={regular('envelope')} />
             </a>
         </footer>
     );

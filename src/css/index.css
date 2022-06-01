@@ -253,12 +253,15 @@ footer {
 }
 
 .footer-link {
-  margin: 0 10px;
-  font-size: 1.2rem;
+  margin: 0 22px;
 }
 
 .footer-link:hover {
   color: var(--txt-dk-color);
+}
+
+.footer-link svg {
+  height: 33px;
 }
 
 /* NoMatch Component */
@@ -310,6 +313,10 @@ footer {
     font-size: 1.3rem;
   }
 
+  .footer-link {
+    margin: 35px;
+  }
+
   /* Forms */
   .Contact, .About, .Resume {
     padding: 0;
@@ -337,9 +344,5 @@ footer {
   
   .nav-link.active {
     font-size: 1.4rem;
-  }
-
-  .footer-link {
-    font-size: 1.3rem;
   }
 }
