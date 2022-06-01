@@ -14,6 +14,13 @@ function Portfolio() {
             githubUrl: 'https://github.com/strudelAndCoffee/travel-log-dashboard'
         },
         {
+            imgSrc: 'story-team.png',
+            imgAlt: 'homepage for story team.',
+            appTitle: 'Story Team',
+            appUrl: 'https://story-team.herokuapp.com/',
+            githubUrl: 'https://github.com/patrickaregan/project3-group6'
+        },
+        {
             imgSrc: 'dev-dash.png',
             imgAlt: 'homepage for dev dash.',
             appTitle: 'Dev Dash',
