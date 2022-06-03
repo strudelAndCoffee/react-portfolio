@@ -5,6 +5,13 @@ import React from 'react';
 function Resume() {
     return(
         <section className="Resume">
+            <div className="resume-btn-container">
+                <div class="resume-btn">
+                    <a href='./resume.html'>View Full Resume</a>
+                </div>
+            </div>
+
+            <div className="resume-fields"> 
             <form>
                 <fieldset>
                     <legend>
@@ -55,6 +62,7 @@ function Resume() {
                     </div>
                 </fieldset>
             </form>
+            </div>
         </section>
     );
 };

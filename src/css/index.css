@@ -112,7 +112,7 @@ nav {
 }
 
 /* Form Components */
-.About, .Contact, .Resume {
+.About, .Contact {
   padding: 0 3vw;
   margin-top: 40px;
 }
@@ -238,6 +238,36 @@ label {
 .link:hover {
   text-decoration: underline;
   color: var(--txt-dk-color);
+}
+
+/* Resume Component */
+
+.Resume {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.resume-btn-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-btn a {
+  background-color: cyan;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.resume-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
 /* Footer Component */
