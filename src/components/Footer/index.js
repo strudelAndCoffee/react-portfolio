@@ -1,8 +1,8 @@
 // FOOTER
 
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { brands, regular } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { brands, regular } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 function Footer() {
     return(

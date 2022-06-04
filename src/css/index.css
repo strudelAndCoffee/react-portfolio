@@ -253,14 +253,22 @@ label {
 .resume-btn-container {
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .resume-btn a {
-  background-color: cyan;
+  background-color: var(--txt-dk-color);
   color: black;
   padding: 10px 25px;
   border-radius: 10px;
+}
+
+.dl-link {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.dl-link a {
+  color: var(--txt-dk-color);
 }
 
 .resume-fields {

@@ -1,6 +1,8 @@
 // RESUME
 
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { regular } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 function Resume() {
     return(
@@ -8,6 +10,11 @@ function Resume() {
             <div className="resume-btn-container">
                 <div class="resume-btn">
                     <a href="./resume.html">View Full Resume</a>
+                </div>
+                <div class="dl-link">
+                    <a href="./docs/Stephen-Trudell-Resume.pdf" download="Stephen-Trudell-Resume">
+                        <FontAwesomeIcon icon={regular('file')} /> Download Copy of Resume
+                    </a>
                 </div>
             </div>
 
