@@ -7,7 +7,7 @@ function Resume() {
         <section className="Resume">
             <div className="resume-btn-container">
                 <div class="resume-btn">
-                    <a href='./resume.html'>View Full Resume</a>
+                    <a href="./resume.html">View Full Resume</a>
                 </div>
             </div>
 
