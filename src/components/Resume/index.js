@@ -20,7 +20,7 @@ function Resume() {
             </div>
 
             <div className="resume-fields"> 
-            <form>
+            <form className="resume-card">
                 <fieldset>
                     <legend>
                         <span className="color-2">Languages / Technologies</span>
@@ -45,7 +45,7 @@ function Resume() {
                 </fieldset>
             </form>
 
-            <form>
+            <form className="resume-card">
                 <fieldset>
                     <legend>
                         <span className="color-2">Operations</span>
