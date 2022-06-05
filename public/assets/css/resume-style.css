@@ -1,0 +1,266 @@
+:root {
+    --icon-color: royalblue;
+    --header-color: darkslateblue;
+    --year-color: slateblue;
+    --txt-dk-color: #74e5ef;
+}
+
+* {
+    margin: 0;
+    line-height: 1.1;
+}
+
+body {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.page {
+    background-color: snow;
+    height: 1100px;
+    width: 850px;
+    border: 1px solid black;
+    margin-inline: auto;
+}
+
+li {
+    margin: 3px 0;
+}
+
+a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+header {
+    background-image: linear-gradient(to right, black, lightslategray, white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-name {
+    color: whitesmoke;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    margin-left: 16px; 
+}
+
+.header-info {
+    padding-right: 22px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-icons {
+    text-align: center;
+    padding-right: 10px;
+}
+
+.header-icons p {
+    padding: 3px 0;
+}
+
+.header-data {
+    text-align: left;
+}
+
+.header-data p {
+    padding: 3px 0;
+}
+
+.header-icon {
+    color: var(--icon-color);
+}
+
+.field {
+    width: 93%;
+    margin-inline: auto;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 4px lightGray;
+}
+
+legend {
+    margin-left: 15px;
+    padding: 0 12px;
+    color: var(--header-color);
+}
+
+.skill-list {
+    width: 24%;
+    text-align: center;
+}
+
+.skill-list h4 {
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+
+.cert-card {
+    margin-top: 21px;
+    padding-bottom: 10px;
+}
+
+.cert-field {
+    border: 1px solid gray;
+    box-shadow: 0 2px 3px lightGray;
+    padding: 8px 23px 15px 23px;
+}
+
+.inner-legend {
+    margin-inline: auto;
+}
+
+.fa-award, .fa-graduation-cap {
+    color: var(--icon-color);
+}
+
+.cert {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.year {
+    font-size: 17px;
+    color: var(--year-color);
+}
+
+.ed-deg {
+    margin: 4px 0 8px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.school {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.pro-header {
+    text-align: center;
+}
+
+.pro-name {
+    font-size: 22px;
+    font-style: italic;
+    padding: 0 10px;
+}
+
+.pro-text {
+    padding: 5px 0;
+}
+
+.pro-links {
+    margin-top: 3px;
+    text-align: center;
+}
+
+.pro-links a {
+    padding-right: 16px;
+}
+
+.sm-space {
+    padding-left: 3px;
+}
+
+.indent {
+    padding-left: 45px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.work-col {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.work-small {
+    border: none;
+    border-top: 1px solid black;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.work-tall {
+    border: none;
+    border-top: 1px solid black;
+    margin-top: 19px;
+    padding: 0;
+}
+
+.work-time {
+    margin-inline: auto;
+    font-size: 18px;
+    color: var(--year-color);
+}
+
+.work-info {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.work-info p {
+    font-size: 17px;
+}
+
+.sub-list {
+    list-style-type: circle;
+}
+
+.links-container {
+    margin-top: 1px;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(to bottom right, white, whitesmoke, lightslategray);
+}
+
+.links {
+    display: flex;
+    width: 100%;
+}
+
+.icons {
+    width: 30%;
+    text-align: right;
+}
+
+.icons p {
+    padding-bottom: 3px;
+}
+
+.space {
+    width: 4%;
+    text-align: center;
+}
+
+.space p {
+    padding-bottom: 3px;
+}
+
+.urls {
+    text-align: left;
+}
+
+.urls p {
+    padding-bottom: 3px;
+}

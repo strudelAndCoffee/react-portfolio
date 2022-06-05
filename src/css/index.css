@@ -247,28 +247,41 @@ label {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .resume-btn-container {
   width: 100%;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .resume-btn a {
   background-color: var(--txt-dk-color);
   color: black;
-  padding: 10px 25px;
-  border-radius: 10px;
+  padding: 5px 14px;
+  border: 1px solid var(--txt-dk-color);
+  border-radius: 6px;
 }
 
-.dl-link {
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-.dl-link a {
+.resume-btn a:hover {
+  text-shadow: none;
   color: var(--txt-dk-color);
+  background-color: black;
+}
+
+.resume-dl-link {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.resume-dl-link a {
+  color: var(--txt-dk-color);
+}
+
+.resume-dl-link a:hover {
+  text-shadow: 0 0 3px var(--txt-dk-color);
 }
 
 .resume-fields {

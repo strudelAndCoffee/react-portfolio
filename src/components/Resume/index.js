@@ -9,13 +9,14 @@ function Resume() {
         <section className="Resume">
             <div className="resume-btn-container">
                 <div class="resume-btn">
-                    <a href="./assets/images/Resume.png">View Full Resume</a>
+                    <a href="./resume-full.html">View Full Resume</a>
                 </div>
-                <div class="dl-link">
-                    <a href="./assets/docs/Stephen-Trudell-Resume.pdf" download="Stephen-Trudell-Resume">
-                        <FontAwesomeIcon icon={regular('file')} /> Download Copy of Resume
-                    </a>
-                </div>
+            </div>
+
+            <div className="resume-dl-link">
+                <a href="./assets/docs/Stephen-Trudell-Resume.pdf" download="Stephen-Trudell-Resume">
+                    <FontAwesomeIcon icon={regular('file')} /> Download
+                </a>
             </div>
 
             <div className="resume-fields"> 
