@@ -29,7 +29,7 @@ body {
 }
 
 li {
-    margin: 3px 0;
+    margin: 7px 0;
 }
 
 a {
@@ -142,7 +142,7 @@ legend {
 
 /* About */
 .about {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 /* Skills */
@@ -193,7 +193,7 @@ legend {
 
 /* Experience */
 .exp {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .work {
@@ -247,8 +247,8 @@ footer {
     justify-content: center;
     align-items: flex-start;
     background-image: linear-gradient(to bottom right, white, whitesmoke, lightslategray);
-    padding-top: 18px;
-    padding-bottom: 40px;
+    padding-top: 12px;
+    padding-bottom: 27px;
 }
 
 /* Links */
