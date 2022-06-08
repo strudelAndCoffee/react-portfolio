@@ -2,17 +2,22 @@
     --icon-color: royalblue;
     --header-color: darkslateblue;
     --year-color: slateblue;
-    --txt-dk-color: #74e5ef;
+    --font-size-lg: 21px;
+    --font-size-md: 20px;
+    --font-size-sm: 18px;
 }
 
 * {
     margin: 0;
-    line-height: 1.1;
+    line-height: 1.2;
+    font-size: var(--font-size-sm);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: black;
-    padding: 10px 0;
 }
 
 .page {
@@ -32,15 +37,29 @@ a {
     text-decoration: none;
 }
 
+em {
+    font-size: 19px;
+}
+
+.indent {
+    padding-left: 30px;
+}
+
+.fa-award {
+    color: var(--header-color);
+}
+
+/* Header */
 header {
-    background-image: linear-gradient(to right, black, lightslategray, white);
+    background-image: linear-gradient(to right, black, lightslategray, snow);
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1px;
 }
 
 .header-name {
     color: whitesmoke;
-    font-size: 50px;
+    font-size: 60px;
     padding-top: 10px;
     padding-bottom: 12px;
     margin-left: 16px; 
@@ -74,53 +93,66 @@ header {
     color: var(--icon-color);
 }
 
+/* Main */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.main-col-left {
+    width: 49%;
+}
+
+.main-col-right {
+    width: 49%;
+}
+
+/* Fields */
 .field {
-    width: 93%;
+    width: 91%;
     margin-inline: auto;
     margin-top: 4px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     border-top: 1px solid gray;
     border-left: 1px solid gray;
     border-right: 1px solid white;
     border-bottom: 1px solid white;
-    box-shadow: 0 1px 4px lightGray;
+    box-shadow: 0 2px 4px lightGray;
 }
 
 legend {
     margin-left: 15px;
-    padding: 0 12px;
+    padding: 0 15px;
+    color: var(--year-color);
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+}
+
+.inner-legend {
+    margin-inline: auto;
     color: var(--header-color);
 }
 
-.skill-list {
-    width: 24%;
-    text-align: center;
+/* About */
+.about {
+    margin-bottom: 12px;
 }
 
-.skill-list h4 {
-    text-decoration: underline;
-    margin-bottom: 8px;
-}
-
+/* Skills */
 .cert-card {
-    margin-top: 33px;
     padding-bottom: 10px;
 }
 
 .cert-field {
     border: 1px solid gray;
     box-shadow: 0 2px 3px lightGray;
-    padding: 8px 23px 15px 23px;
-}
-
-.inner-legend {
-    margin-inline: auto;
-}
-
-.fa-award, .fa-graduation-cap {
-    color: var(--icon-color);
 }
 
 .cert {
@@ -128,132 +160,133 @@ legend {
     line-height: 1.5;
 }
 
+.school {
+    /* font-weight: bold; */
+    font-style: italic;
+    font-size: var(--font-size-md);
+}
+
 .year {
-    font-size: 17px;
     color: var(--year-color);
 }
 
-.ed-deg {
-    margin: 4px 0 8px 0;
-    text-align: center;
-    line-height: 1.5;
+.skillz {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
 }
 
-.title {
-    font-size: 18px;
+.skill-list {
+    text-align: left;
 }
 
-.school {
-    font-style: italic;
-    font-size: 18px;
+.skill-list h4 {
+    text-decoration: underline;
+    margin: 3px 0;
 }
 
-.pro-header {
-    text-align: center;
+.skill-list p {
+    padding-left: 28px;
 }
 
-.pro-name {
-    font-size: 22px;
-    font-style: italic;
-    padding: 0 10px;
-}
-
-.pro-text {
-    padding: 5px 0;
-}
-
-.pro-links {
-    margin-top: 3px;
-    text-align: center;
-}
-
-.pro-links a {
-    padding-right: 16px;
-}
-
-.sm-space {
-    padding-left: 3px;
-}
-
-.indent {
-    padding-left: 45px;
+/* Experience */
+.exp {
+    margin-bottom: 20px;
 }
 
 .work {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.work-col {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-}
-
-.work-small {
     border: none;
     border-top: 1px solid black;
-    margin: 8px 0;
+    /* margin: 5px 0 6px 0; */
     padding: 0;
-}
-
-.work-tall {
-    border: none;
-    border-top: 1px solid black;
-    margin-top: 19px;
-    padding: 0;
+    width: 80%;
 }
 
 .work-time {
     margin-inline: auto;
-    font-size: 18px;
+    padding: 0 22px;
+    font-size: var(--font-size-sm);
+    font-weight: normal;
     color: var(--year-color);
 }
 
 .work-info {
-    padding-top: 5px;
     text-align: center;
 }
 
-.work-info p {
-    font-size: 17px;
+.work-list {
+    padding-bottom: 5px;
 }
 
-.sub-list {
-    list-style-type: circle;
-}
-
-.links-container {
-    margin-top: 1px;
-    padding-top: 22px;
-    padding-bottom: 24px;
+/* Education */
+.ed-card {
+    width: 100%;
     display: flex;
+    justify-content: center;
+}
+
+.ed-field {
+    width: 88%;
+    border: 1px solid gray;
+    box-shadow: 0 2px 3px lightGray;
+}
+
+.ed-deg {
+    margin: 3px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
     background-image: linear-gradient(to bottom right, white, whitesmoke, lightslategray);
+    padding-top: 18px;
+    padding-bottom: 40px;
+}
+
+/* Links */
+.links-container {
+    width: 58%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.port {
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .links {
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
 .icons {
-    width: 30%;
+    /* width: 30%; */
     text-align: right;
 }
 
-.icons p {
+.icons a {
     padding-bottom: 3px;
 }
 
 .space {
-    width: 4%;
+    width: 6%;
     text-align: center;
 }
 
-.space p {
+.space a {
     padding-bottom: 3px;
 }
 
@@ -261,6 +294,13 @@ legend {
     text-align: left;
 }
 
-.urls p {
+.urls a {
     padding-bottom: 3px;
+    font-size: 17px;
+}
+
+/* References */
+.ref {
+    background-color: snow;
+    width: 35%;
 }
