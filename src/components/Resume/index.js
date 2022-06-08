@@ -1,8 +1,8 @@
 // RESUME
 
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { regular } from '@fortawesome/fontawesome-svg-core/import.macro';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { regular } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 function Resume() {
     return(
