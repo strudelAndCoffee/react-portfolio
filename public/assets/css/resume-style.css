@@ -11,7 +11,7 @@
     margin: 0;
     line-height: 1.2;
     font-size: var(--font-size-sm);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, sans-serif;
 }
 
 body {
@@ -29,7 +29,8 @@ body {
 }
 
 li {
-    margin: 7px 0;
+    margin: 8px 0 6px 0;
+    line-height: 1.1;
 }
 
 a {
@@ -42,7 +43,7 @@ em {
 }
 
 .indent {
-    padding-left: 30px;
+    padding-left: 45px;
 }
 
 .fa-award {
@@ -54,7 +55,7 @@ header {
     background-image: linear-gradient(to right, black, lightslategray, snow);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1px;
+    margin-bottom: 6px;
 }
 
 .header-name {
@@ -142,7 +143,7 @@ legend {
 
 /* About */
 .about {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 /* Skills */
@@ -158,6 +159,7 @@ legend {
 .cert {
     text-align: center;
     line-height: 1.5;
+    padding: 0 5px;
 }
 
 .school {
@@ -193,7 +195,7 @@ legend {
 
 /* Experience */
 .exp {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .work {
@@ -217,7 +219,7 @@ legend {
 }
 
 .work-list {
-    padding-bottom: 5px;
+    padding-bottom: 1px;
 }
 
 /* Education */
@@ -234,9 +236,10 @@ legend {
 }
 
 .ed-deg {
-    margin: 3px 0;
+    /* margin: 1px 0; */
     text-align: center;
     line-height: 1.5;
+    padding-bottom: 2px;
 }
 
 /* Footer */
@@ -247,18 +250,19 @@ footer {
     justify-content: center;
     align-items: flex-start;
     background-image: linear-gradient(to bottom right, white, whitesmoke, lightslategray);
-    padding-top: 12px;
-    padding-bottom: 27px;
+    padding-top: 24px;
+    padding-bottom: 33px;
 }
 
 /* Links */
 .links-container {
-    width: 58%;
+    width: 60%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 10px;
+    padding-top: 11px;
+    padding-right: 2px;
 }
 
 .port {
@@ -277,30 +281,32 @@ footer {
     text-align: right;
 }
 
-.icons a {
-    padding-bottom: 3px;
-}
-
 .space {
     width: 6%;
     text-align: center;
-}
-
-.space a {
-    padding-bottom: 3px;
 }
 
 .urls {
     text-align: left;
 }
 
-.urls a {
-    padding-bottom: 3px;
+.urls p, .icons p, .space p {
+    padding-bottom: 4px;
+}
+
+.urls a, .icons a, .space a {
     font-size: 17px;
 }
 
 /* References */
 .ref {
     background-color: snow;
-    width: 35%;
+    width: 30%;
+    margin-right: 42px;
+}
+
+.ref legend {
+    padding: 0 2px;
+    text-align: center;
+    margin: 0;
 }
