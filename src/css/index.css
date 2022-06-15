@@ -297,6 +297,10 @@ label {
   width: 100%;
 }
 
+.skills-text {
+  padding: 0 0 0 5px;
+}
+
 /* Footer Component */
 footer {
   position: fixed;
@@ -418,6 +422,25 @@ footer {
   .Resume {
     margin-top: 30px;
   }
+
+  /* .resume-field {
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+
+  .skills-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .skills-group-card {
+    flex: 0 0 48%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 
@@ -460,6 +483,8 @@ footer {
 
 .profile-txt {
   font-size: 1rem;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 .about-bio {

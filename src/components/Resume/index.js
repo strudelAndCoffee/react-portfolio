@@ -21,52 +21,71 @@ function Resume() {
 
             <div className="resume-fields"> 
             <form className="resume-card">
-                <fieldset>
+                <fieldset className="resume-filed">
                     <legend>
                         <span className="color-2">Languages / Technologies</span>
                     </legend>
-                    <div className="bio-text">
-                        <h3>Front End</h3>
-                        <ul>
-                            <li>Semantic HTML</li>
-                            <li>CSS / Bootstrap / Bulma</li>
-                            <li>JavaScript (ES6)</li>
-                            <li className="italic">Reading Documentation</li>
-                            <li>React</li>
-                        </ul>
-                        <h3>Back End</h3>
-                        <ul>
-                            <li>Node.js / Jest / Handlebars</li>
-                            <li>Express / AJAX</li>
-                            <li>SQL / MongoDB</li>
-                            <li>GraphQL</li>
-                        </ul>
+                    <div className="skills-text">
+                        <div className="skills-group-card">
+                            <div className="skills-card-container">
+                            <h3>Front End</h3>
+                            <ul>
+                                <li>Semantic HTML</li>
+                                <li>CSS / SCSS</li>
+                                <li>3rd Party Frameworks / Libraries</li>
+                                <li>JavaScript (ES6)</li>
+                                <li className="italic">Reading Documentation</li>
+                                <li>React</li>
+                            </ul>
+                            </div>
+                        </div>
+
+                        <div className="skills-group-card">
+                            <div className="skills-card-container">
+                            <h3>Back End</h3>
+                            <ul>
+                                <li>Node.js / Jest / Handlebars</li>
+                                <li>Express / AJAX</li>
+                                <li>SQL / MongoDB</li>
+                                <li>GraphQL</li>
+                            </ul>
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
             </form>
 
             <form className="resume-card">
-                <fieldset>
+                <fieldset className="resume-filed">
                     <legend>
                         <span className="color-2">Operations</span>
                     </legend>
-                    <div className="bio-text">
-                        <h3>Design / Architecture</h3>
-                        <ul>
-                            <li className="italic">Comprehending Documentation</li>
-                            <li>RESTful APIs</li>
-                            <li>Model View Controller</li>
-                            <li>Progressive Web Applications</li>
-                            <li>Single Page Applications</li>
-                            <li>MERN Stack</li>
-                        </ul>
-                        <h3>Development Practices</h3>
-                        <ul>
-                            <li>AGILE</li>
-                            <li>OOP</li>
-                            <li>TDD</li>
-                            <li>Git / GitHub</li>
-                        </ul>
+                    <div className="skills-text">
+                        <div className="skills-group-card">
+                            <div className="skills-card-container">
+                            <h3>Design</h3>
+                            <ul>
+                                <li className="italic">Comprehending Documentation</li>
+                                <li>RESTful APIs</li>
+                                <li>Model View Controller</li>
+                                <li>Progressive Web Applications</li>
+                                <li>Single Page Applications</li>
+                                <li>MERN Stack</li>
+                            </ul>
+                            </div>
+                        </div>
+
+                        <div className="skills-group-card">
+                            <div className="skills-card-container">
+                            <h3>DevOps</h3>
+                            <ul>
+                                <li>AGILE</li>
+                                <li>OOP</li>
+                                <li>TDD</li>
+                                <li>Git / GitHub</li>
+                            </ul>
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
             </form>
