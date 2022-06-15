@@ -387,7 +387,7 @@ footer {
   }
 
   /* Forms */
-  .Contact, .About, .Resume {
+  .Contact, .About, .Bio, .Resume {
     padding: 0;
     display: flex;
     justify-content: center;
@@ -418,4 +418,55 @@ footer {
   .Resume {
     margin-top: 30px;
   }
+}
+
+
+
+/* NEW ABOUT */
+
+.about-form {
+  width: 94vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.profile-img-holder {
+  flex: 0 0 30%;
+  text-align: right;
+}
+
+.profile-txt-holder {
+  flex: 0 0 60%;
+  padding: 5px 15px 6px 25px;
+  background-color: #0c0a16;
+}
+
+.profile-txt-banner {
+  font-size: 1.2rem;
+}
+
+.profile-img {
+  width: 206px;
+  height: 206px;
+}
+
+.profile-txt {
+  font-size: 1rem;
+}
+
+.about-bio {
+  width: 680px;
+  margin-top: 33px;
+}
+
+.indent {
+  padding-left: 45px;
 }
