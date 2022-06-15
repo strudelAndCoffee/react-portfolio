@@ -1,13 +1,13 @@
 // RESUME
 
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { regular } from '@fortawesome/fontawesome-svg-core/import.macro';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { regular } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 function Resume() {
     return(
         <section className="Resume">
-            <div className="resume-btn-container">
+            {/* <div className="resume-btn-container">
                 <div class="resume-btn">
                     <a href="./resume-full.html">View Full Resume</a>
                 </div>
@@ -17,7 +17,7 @@ function Resume() {
                 <a href="./assets/docs/Resume_Stephen-Trudell.pdf" download="Resume_Stephen-Trudell">
                     <FontAwesomeIcon icon={regular('file')} /> Download
                 </a>
-            </div>
+            </div> */}
 
             <div className="resume-fields"> 
             <form className="resume-card">

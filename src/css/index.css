@@ -474,6 +474,7 @@ footer {
 
 .profile-txt-banner {
   font-size: 1.2rem;
+  color: var(--txt-dk-color);
 }
 
 .profile-img {
@@ -490,8 +491,33 @@ footer {
 .about-bio {
   width: 680px;
   margin-top: 33px;
+  padding-top: 11px;
 }
 
 .indent {
   padding-left: 45px;
+}
+
+.indent-sm {
+  padding-left: 15px;
+}
+
+.readmore-btn-container {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.readmore-btn {
+  background-color: var(--txt-dk-color);
+  color: black;
+  padding: 5px 14px;
+  border: 1px solid var(--txt-dk-color);
+  border-radius: 6px;
+}
+
+.readmore-btn:hover {
+  text-shadow: none;
+  color: var(--txt-dk-color);
+  background-color: black;
 }
