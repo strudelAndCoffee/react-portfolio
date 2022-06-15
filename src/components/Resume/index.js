@@ -44,10 +44,12 @@ function Resume() {
                             <div className="skills-card-container">
                             <h3>Back End</h3>
                             <ul>
-                                <li>Node.js / Jest / Handlebars</li>
-                                <li>Express / AJAX</li>
-                                <li>SQL / MongoDB</li>
                                 <li>GraphQL</li>
+                                <li>Node.js / Express</li>
+                                <li>Jest</li>
+                                <li>SQL</li>
+                                <li>MongoDB</li>
+                                <li>AJAX</li>
                             </ul>
                             </div>
                         </div>
@@ -66,11 +68,11 @@ function Resume() {
                             <h3>Design</h3>
                             <ul>
                                 <li className="italic">Comprehending Documentation</li>
-                                <li>RESTful APIs</li>
+                                <li>MERN Stack</li>
                                 <li>Model View Controller</li>
                                 <li>Progressive Web Applications</li>
                                 <li>Single Page Applications</li>
-                                <li>MERN Stack</li>
+                                <li>RESTful APIs</li>
                             </ul>
                             </div>
                         </div>
@@ -80,9 +82,10 @@ function Resume() {
                             <h3>DevOps</h3>
                             <ul>
                                 <li>AGILE</li>
-                                <li>OOP</li>
+                                <li>OOP / Functional Programming</li>
                                 <li>TDD</li>
-                                <li>Git / GitHub</li>
+                                <li>Heroku / GitHub</li>
+                                <li>Git</li>
                             </ul>
                             </div>
                         </div>
