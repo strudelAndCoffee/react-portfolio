@@ -1,6 +1,7 @@
 // PROJECT
 
 import React from 'react';
+import { GoMarkGithub } from "react-icons/go";
 
 function Project(props) {
     const {
@@ -18,9 +19,14 @@ function Project(props) {
                 alt={imgAlt}
             />
             <a href={appUrl} target="_blank" rel="noreferrer">
-                <h3 className="link">{appTitle}</h3>
+                <h3 className="link">
+                    {appTitle}
+                </h3>
             </a>
-            <a className="link" href={githubUrl} target="_blank" rel="noreferrer">View GitHub Repository</a>
+            <a className="link" href={githubUrl} target="_blank" rel="noreferrer">
+                <GoMarkGithub />
+                <span className="indent-xs">View</span> GitHub Repository
+            </a>
         </article>
     );
 };

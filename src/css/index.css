@@ -502,6 +502,10 @@ footer {
   padding-left: 15px;
 }
 
+.indent-xs {
+  padding-left: 8px;
+}
+
 .readmore-btn-container {
   width: 100%;
   text-align: center;
