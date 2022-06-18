@@ -518,6 +518,7 @@ footer {
   padding: 5px 14px;
   border: 1px solid var(--txt-dk-color);
   border-radius: 6px;
+  font-size: 1rem;
 }
 
 .readmore-btn:hover {

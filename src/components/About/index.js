@@ -1,6 +1,8 @@
 // ABOUT
 
 import React, { useState } from "react";
+import { BiHappyBeaming } from "react-icons/bi";
+import { IconContext } from "react-icons";
 
 function About() {
   const [bioImg] = useState([
@@ -32,7 +34,7 @@ function About() {
           </div>
 
           <div className="profile-txt-holder">
-            <div className="profile-txt-banner">Brand Statement...</div>
+            <div className="profile-txt-banner">Brand Statement</div>
             <div className="profile-txt">
               <span className="indent">"Full</span> stack web developer leveraging
               over a decade of experience in audio engineering to provide
@@ -77,7 +79,13 @@ function About() {
               </div>
           ) : (
             <div className="readmore-btn-container">
-              <button onClick={handleBtnClick} className="readmore-btn">Read More?</button>
+              <button onClick={handleBtnClick} className="readmore-btn">Read More 
+                <span className="indent-xs">
+                <IconContext.Provider value={{ style: { verticalAlign: 'text-bottom' }, size: '1.4em' }}>
+                  <BiHappyBeaming />
+                </IconContext.Provider>
+                </span>
+              </button>
             </div>
           )}
           </div>
