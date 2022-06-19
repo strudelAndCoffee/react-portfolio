@@ -1,8 +1,6 @@
 // ABOUT
 
 import React, { useState } from "react";
-import { BiHappyBeaming } from "react-icons/bi";
-import { IconContext } from "react-icons";
 
 function About() {
   const [bioImg] = useState([
@@ -81,9 +79,7 @@ function About() {
             <div className="readmore-btn-container">
               <button onClick={handleBtnClick} className="readmore-btn">Read More 
                 <span className="indent-xs">
-                <IconContext.Provider value={{ style: { verticalAlign: 'text-bottom' }, size: '1.4em' }}>
-                  <BiHappyBeaming />
-                </IconContext.Provider>
+                  :)
                 </span>
               </button>
             </div>

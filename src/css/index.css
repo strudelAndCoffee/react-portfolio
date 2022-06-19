@@ -13,6 +13,17 @@
   line-height: 1.5;
 }
 
+/* Animations */
+@keyframes btn-hover {
+  from {background-color: var(--txt-dk-color); color: black;}
+  to {background-color: black; color: var(--txt-dk-color);}
+}
+
+@keyframes link-hover {
+  from {color: var(--txt-color)}
+  to {color: var(--txt-dk-color); text-shadow: 0 1px 1px black;}
+}
+
 body { 
   background-color: var(--bg-dk-color);
   font-size: 1.1rem;
@@ -34,7 +45,9 @@ a {
 
 a:hover {
   color: var(--txt-dk-color);
-  text-shadow: 0 1px 1px black;
+  animation-name: link-hover;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
 a:visited {
@@ -101,8 +114,9 @@ nav {
 }
 
 .nav-link:hover {
-  color: var(--txt-dk-color);
-  text-shadow: 0 1px 1px black;
+  animation-name: link-hover;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
 .nav-link.active {
@@ -110,6 +124,7 @@ nav {
   color: var(--txt-dk-color);
   text-shadow: 0 1px 2px black;
   font-size: 1.2rem;
+  animation-name: none;
 }
 
 /* Form Components */
@@ -523,6 +538,8 @@ footer {
 
 .readmore-btn:hover {
   text-shadow: none;
-  color: var(--txt-dk-color);
-  background-color: black;
+  animation-name: btn-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
