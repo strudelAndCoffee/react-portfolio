@@ -19,10 +19,11 @@ function Project(props) {
                 alt={imgAlt}
             />
             <a href={appUrl} target="_blank" rel="noreferrer">
-                <h3 className="link">
+                <span className="link app-title">
                     {appTitle}
-                </h3>
+                </span>
             </a>
+            <br />
             <a className="link" href={githubUrl} target="_blank" rel="noreferrer">
                 <GoMarkGithub />
                 <span className="indent-xs">View</span> GitHub Repository

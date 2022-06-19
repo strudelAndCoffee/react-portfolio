@@ -44,7 +44,6 @@ a {
 }
 
 a:hover {
-  color: var(--txt-dk-color);
   animation-name: link-hover;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
@@ -251,9 +250,18 @@ label {
   margin: 5px 0;
 }
 
+.link {
+  font-size: 1.1rem;
+}
+
+.app-title {
+  font-size: 1.3rem;
+}
+
 .link:hover {
-  text-decoration: underline;
-  color: var(--txt-dk-color);
+  animation-name: link-hover;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
 /* Resume Component */
