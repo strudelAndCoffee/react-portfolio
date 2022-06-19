@@ -1,6 +1,8 @@
 // ABOUT
 
 import React, { useState } from "react";
+import { IconContext } from "react-icons";
+import { AiFillHeart } from "react-icons/ai";
 
 function About() {
   const [bioImg] = useState([
@@ -14,6 +16,8 @@ function About() {
 
   function handleBtnClick(e) {
     e.preventDefault();
+    e.target.className = "disappear";
+    e.target.innerHTML = "";
     setReadMore(true);
   }
 
@@ -27,7 +31,7 @@ function About() {
             <img
               src={require(`../../assets/images/${bioImg[0].src}`)}
               alt={bioImg[0].alt}
-              class="profile-img"
+              className="profile-img"
             />
           </div>
 
@@ -59,9 +63,18 @@ function About() {
           <br />
           <br />
           <span className="indent">I</span> gained my primary education in the Austin Area Home Schoolers community, got my A.A. Degree in French from Austin Community College, and recently completed the Full Stack Web Development Code Bootcamp Certificate Program at the University of Texas. With over a decade of audio engineering experience, including recording, mixing/mastering, music production and performance, both in-studio and on-stage, and serving long-term positions at two local community staples (H-E-B groceries and The Soup Peddler restaurant,) I have been rewarded with my current life's worth of living, working, and playing in this rapidly changing city, and hope to continue to do so as we advance forward.
-          {readMore ? (
+              <p className="readmore-btn-container">
+                <button className="readmore-btn" onClick={handleBtnClick}>
+                  Read More<span className="indent-xs">:)</span>
+                  {readMore && (
+                    <IconContext.Provider value={{ size: "1.8rem" }}>
+                      <AiFillHeart />
+                    </IconContext.Provider>
+                  )}
+                </button>
+              </p>
+          {readMore && (
             <div>
-              <br />
               <span className="indent">Having</span> worked along side a wide spectrum of colorful humans, I hope to offer my unique experience and ever-evolving perspective to the professional endeavors I may find myself in. I will always hold onto my love of music, and will never abandon its creative outlets completely, but as I begin my change in careers, I will devote my time and energy fully to the fascinating and engaging field of website development! I am excited to keep up with new technologies, collaborate on challenging projects, and find creative solutions to unrehearsed problems. Though my coding qualifications are still in early development, I believe that my expertise in learning and self-teaching will allow me to quickly adapt and forge ahead in any unknown situation.
               <br />
               <br />
@@ -75,14 +88,6 @@ function About() {
               <br />
               <span className="indent-sm">~Stevie</span>
               </div>
-          ) : (
-            <div className="readmore-btn-container">
-              <button onClick={handleBtnClick} className="readmore-btn">Read More 
-                <span className="indent-xs">
-                  :)
-                </span>
-              </button>
-            </div>
           )}
           </div>
         </fieldset>
