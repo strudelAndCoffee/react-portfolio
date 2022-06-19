@@ -62,14 +62,9 @@ li {
   margin-bottom: 5px;
 }
 
-/* App.js and Main */
+/* App.js */
 .App {
   color: var(--txt-color);
-}
-
-main {
-  padding: 10vh 0;
-  background-color: var(--bg-dk-color);
 }
 
 /* Header Component */
@@ -124,16 +119,21 @@ nav {
 }
 
 .nav-link.active {
-  text-decoration: underline;
   color: var(--txt-dk-color);
   text-shadow: 0 1px 2px black;
   font-size: 1.2rem;
   animation-name: none;
 }
 
+/* Main */
+main {
+  padding: 10vh 0;
+  background-color: var(--bg-dk-color);
+}
+
 /* Form Components */
 .About, .Contact {
-  padding: 0 3vw;
+  padding: 0 30px;
   margin-top: 40px;
 }
 
@@ -154,49 +154,6 @@ fieldset {
 legend {
   font-size: 1.5rem;
   margin-left: 20px;
-}
-
-/* About Form */
-.bio-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.bio-form-top {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
-
-.grow {
-  position: absolute;
-  width: 85vw;
-}
-
-.bio-form-bottom {
-  margin-top: 75px;
-  width: 100%;
-}
-
-.bio-img {
-padding: 0 4px;
-}
-
-.bio-img img {
-  height: 175x;
-  width: 175px;
-}
-
-.bio-text {
-  padding: 0 0 0 5px;
-}
-
-.bio-sig {
-  text-align: center;
 }
 
 label {
@@ -224,6 +181,102 @@ label {
 
 .form-btn:hover {
   cursor: pointer;
+}
+
+/* About Form */
+.about-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img-holder {
+  flex: 0 0 25%;
+  text-align: right;
+}
+
+.profile-txt-holder {
+  flex: 0 0 65%;
+  padding: 5px 2px 5px 15px;
+  background-color: #0c0a16;
+}
+
+.profile-txt-banner {
+  font-size: 1.2rem;
+  color: var(--txt-dk-color);
+}
+
+.profile-img {
+  width: 206px;
+  height: 206px;
+}
+
+.profile-txt {
+  font-size: 1rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.about-bio {
+  width: 95%;
+  margin-top: 33px;
+  padding-top: 11px;
+}
+
+.indent {
+  padding-left: 45px;
+}
+
+.indent-sm {
+  padding-left: 15px;
+}
+
+.indent-xs {
+  padding-left: 8px;
+}
+
+.readmore-btn-container {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.readmore-btn {
+  background-color: var(--txt-dk-color);
+  color: black;
+  padding: 5px 14px;
+  border: 1px solid var(--txt-dk-color);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.readmore-btn:hover {
+  text-shadow: none;
+  cursor: pointer;
+  animation-name: btn-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.disappear {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--txt-dk-color);
+  padding: 0;
+  margin: 0;
+  animation-name: readmore-click;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
 /* Portfolio Component */
@@ -359,20 +412,16 @@ footer {
   padding-top: 20vh;
 }
 
-@media screen and (min-width: 418px) {
-  .bio-form-bottom {
-    margin-top: 50px;
+@media screen and (min-width: 512px) {
+  .profile {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 90%;
   }
-}
 
-@media screen and (min-width: 444px) {
-  .grow {
-    position: static;
+  .about-bio {
     width: 100%;
-  }
-
-  .bio-form-bottom {
-    margin-top: 0;
   }
 }
 
@@ -400,6 +449,10 @@ footer {
   
   .nav-link.active {
     font-size: 1.3rem;
+  }
+
+  .about-bio {
+    width: 680px;
   }
 
   .Resume {
@@ -469,104 +522,4 @@ footer {
     display: flex;
     justify-content: center;
   }
-}
-
-
-
-/* NEW ABOUT */
-
-.about-form {
-  width: 94vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.profile {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.profile-img-holder {
-  flex: 0 0 30%;
-  text-align: right;
-}
-
-.profile-txt-holder {
-  flex: 0 0 60%;
-  padding: 5px 15px 6px 25px;
-  background-color: #0c0a16;
-}
-
-.profile-txt-banner {
-  font-size: 1.2rem;
-  color: var(--txt-dk-color);
-}
-
-.profile-img {
-  width: 206px;
-  height: 206px;
-}
-
-.profile-txt {
-  font-size: 1rem;
-  font-weight: lighter;
-  font-style: italic;
-}
-
-.about-bio {
-  width: 680px;
-  margin-top: 33px;
-  padding-top: 11px;
-}
-
-.indent {
-  padding-left: 45px;
-}
-
-.indent-sm {
-  padding-left: 15px;
-}
-
-.indent-xs {
-  padding-left: 8px;
-}
-
-.readmore-btn-container {
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.readmore-btn {
-  background-color: var(--txt-dk-color);
-  color: black;
-  padding: 5px 14px;
-  border: 1px solid var(--txt-dk-color);
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-.readmore-btn:hover {
-  text-shadow: none;
-  cursor: pointer;
-  animation-name: btn-hover;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-
-.disappear {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  color: var(--txt-dk-color);
-  padding: 0;
-  margin: 0;
-  animation-name: readmore-click;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
 }
