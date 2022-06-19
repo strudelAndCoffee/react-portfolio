@@ -1,6 +1,7 @@
 // PROJECT
 
 import React from 'react';
+import { IconContext } from "react-icons";
 import { GoMarkGithub } from "react-icons/go";
 
 function Project(props) {
@@ -25,7 +26,9 @@ function Project(props) {
             </a>
             <br />
             <a className="link" href={githubUrl} target="_blank" rel="noreferrer">
-                <GoMarkGithub />
+                <IconContext.Provider value={{ size: '0.9em' }}>
+                    <GoMarkGithub />
+                </IconContext.Provider>
                 <span className="indent-xs">View</span> GitHub Repository
             </a>
         </article>
