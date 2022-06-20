@@ -121,7 +121,6 @@ nav {
 .nav-link.active {
   color: var(--txt-dk-color);
   text-shadow: 0 1px 2px black;
-  font-size: 1.2rem;
   animation-name: none;
 }
 
@@ -446,10 +445,6 @@ footer {
   .nav-link {
     font-size: 1.2rem;
   }
-  
-  .nav-link.active {
-    font-size: 1.3rem;
-  }
 
   .about-bio {
     width: 680px;
@@ -495,19 +490,10 @@ footer {
   .nav-link {
     font-size: 1.3rem;
   }
-  
-  .nav-link.active {
-    font-size: 1.4rem;
-  }
 
   .Resume {
     margin-top: 30px;
   }
-
-  /* .resume-field {
-    flex-direction: row;
-    justify-content: space-between;
-  } */
 
   .skills-text {
     width: 100%;

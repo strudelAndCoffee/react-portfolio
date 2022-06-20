@@ -17,7 +17,7 @@ function About() {
   function handleBtnClick(e) {
     e.preventDefault();
     e.target.className = "disappear";
-    e.target.innerHTML = "";
+    e.target.innerHTML = "<span></span>";
     setReadMore(true);
   }
 
