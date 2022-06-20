@@ -60,13 +60,6 @@ a {
   margin: 3px 0;
 }
 
-/* a:hover {
-  animation-name: link-hover;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-} */
-
 a:visited {
   color: var(--txt-color);
 }
@@ -491,6 +484,10 @@ footer {
 
   .Resume {
     margin-top: 50px;
+  }
+
+  .center-legend {
+    margin-inline: auto;
   }
 
   .resume-fields {

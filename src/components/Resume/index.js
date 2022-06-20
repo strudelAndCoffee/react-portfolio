@@ -22,7 +22,7 @@ function Resume() {
             <div className="resume-fields"> 
             <form className="resume-card">
                 <fieldset className="resume-filed">
-                    <legend>
+                    <legend className="center-legend">
                         <span className="color-2">Languages / Technologies</span>
                     </legend>
                     <div className="skills-text">
@@ -47,9 +47,10 @@ function Resume() {
                                 <li>GraphQL</li>
                                 <li>Node.js / Express</li>
                                 <li>Jest</li>
-                                <li>SQL</li>
-                                <li>MongoDB</li>
+                                <li>SQL / MySQL</li>
+                                <li>MongoDB / NoSQL</li>
                                 <li>AJAX</li>
+                                <li>RESTful APIs</li>
                             </ul>
                             </div>
                         </div>
@@ -59,7 +60,7 @@ function Resume() {
 
             <form className="resume-card">
                 <fieldset className="resume-filed">
-                    <legend>
+                    <legend className="center-legend">
                         <span className="color-2">Operations</span>
                     </legend>
                     <div className="skills-text">
@@ -69,10 +70,10 @@ function Resume() {
                             <ul>
                                 <li className="italic">Comprehending Documentation</li>
                                 <li>MERN Stack</li>
+                                <li>Search Engine Optimization</li>
                                 <li>Model View Controller</li>
                                 <li>Progressive Web Applications</li>
                                 <li>Single Page Applications</li>
-                                <li>RESTful APIs</li>
                             </ul>
                             </div>
                         </div>
