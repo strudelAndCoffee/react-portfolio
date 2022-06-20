@@ -16,9 +16,26 @@ function Contact() {
         }
     };
 
-    // when form submit, send window alert
+    const [formName, setFormName] = useState('');
+    const [formEmail, setFormEmail] = useState('');
+    const [formMsg, setFormMsg] = useState('');
+
+    function changeHandler(event) {
+        if (event.target.name === "name") {
+          setFormName(event.target.value);
+        }
+        if (event.target.name === "email") {
+            setFormEmail(event.target.value);
+        }
+        if (event.target.name === "message") {
+            setFormMsg(event.target.value);
+        }
+    };
+
     function submitHandler(event) {
         event.preventDefault();
+
+
         // no database set up for contact message handling
         alert("We are unable to process your request at this time. You may contact Stevie using his email address listed below. Thank you!");
     };
@@ -34,13 +51,30 @@ function Contact() {
                         <small><em>Note: this form is currently out of order.</em></small>
                     </div>
                     <label htmlFor="name">Name </label>
-                    <input type="text" name="name" className="form-input" onBlur={inputHandler} />
+                    <input
+                        type="text"
+                        name="name"
+                        className="form-input"
+                        onBlur={inputHandler}
+                        onChange={changeHandler}
+                    />
                     <br />
                     <label htmlFor="email">Email </label>
-                    <input type="email" name="email" className="form-input" onBlur={inputHandler} />
+                    <input
+                        type="email"
+                        name="email"
+                        className="form-input"
+                        onBlur={inputHandler} 
+                        onChange={changeHandler}
+                    />
                     <br />
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" className="form-text" onBlur={inputHandler}></textarea>
+                    <textarea
+                        name="message"
+                        className="form-text"
+                        onBlur={inputHandler}
+                        onChange={changeHandler}
+                    ></textarea>
                     <p>{errorMsg}</p>
                     <button type="submit" className="form-btn">Submit</button>
                 </fieldset>
