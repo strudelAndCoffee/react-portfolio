@@ -15,12 +15,14 @@ function Project(props) {
 
     return(
         <article className="Project">
-            <img 
-                src={require(`../../assets/images/${imgSrc}`)}
-                alt={imgAlt}
-            />
-            <a href={appUrl} target="_blank" rel="noreferrer">
-                <span className="link app-title">
+            <a className="img-link" href={appUrl} target="_blank" rel="noreferrer">
+                <img 
+                    src={require(`../../assets/images/${imgSrc}`)}
+                    alt={imgAlt}
+                />
+            </a>
+            <a className="app-title" href={appUrl} target="_blank" rel="noreferrer">
+                <span>
                     {appTitle}
                 </span>
             </a>

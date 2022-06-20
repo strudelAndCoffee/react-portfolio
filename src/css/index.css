@@ -21,18 +21,23 @@
 }
 
 @keyframes link-hover {
-  from {color: var(--txt-color)}
-  to {color: var(--txt-dk-color); text-shadow: 0 1px 1px black;}
-}
-
-@keyframes nav-link-hover {
   from {color: var(--txt-color); bottom: 0;}
   to {color: var(--txt-dk-color); text-shadow: 0 1px 3px var(--txt-trans-color); bottom: 3px;}
+}
+
+@keyframes sm-link-hover {
+  from {color: var(--txt-color); bottom: 0;}
+  to {color: var(--txt-dk-color); text-shadow: 0 1px 2px var(--txt-trans-color); bottom: 2px;}
 }
 
 @keyframes readmore-click {
   from {opacity: 1; bottom: 0;}
   to {opacity: 0; bottom: 30px;}
+}
+
+@keyframes img-link-hover {
+  from {width: 300px; bottom: 0;}
+  to {width: 302px; bottom: 2px; box-shadow: 0 1px 5px var(--txt-trans-color);}
 }
 
 body { 
@@ -50,15 +55,17 @@ body {
 
 a {
   text-decoration: none;
+  position: relative;
   color: var(--txt-color);
   margin: 3px 0;
 }
 
-a:hover {
+/* a:hover {
   animation-name: link-hover;
-  animation-duration: 0.7s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
-}
+  animation-timing-function: ease-in-out;
+} */
 
 a:visited {
   color: var(--txt-color);
@@ -120,8 +127,9 @@ nav {
 }
 
 .nav-link:hover {
-  animation-name: nav-link-hover;
+  animation-name: link-hover;
   animation-duration: 0.3s;
+  animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
 
@@ -306,27 +314,45 @@ label {
   background-color: var(--bg-color);
 }
 
-.Project img {
-  height: 270px;
-  width: 300px;
-}
-
 .Project h3 {
   margin: 5px 0;
 }
 
+.img-link img {
+  position: relative;
+  height: 270px;
+  width: 300px;
+}
+
+.img-link img:hover {
+  animation-name: img-link-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
 .link {
   font-size: 1.1rem;
+  position: relative;
 }
 
 .app-title {
   font-size: 1.3rem;
+  position: relative;
 }
 
 .link:hover {
-  animation-name: link-hover;
-  animation-duration: 0.7s;
+  animation-name: sm-link-hover;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.app-title:hover {
+  animation-name: sm-link-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 /* Resume Component */
@@ -403,10 +429,15 @@ footer {
 
 .footer-link {
   margin: 0 22px;
+  position: relative;
 }
 
 .footer-link:hover {
   color: var(--txt-dk-color);
+  animation-name: link-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 .footer-link svg {
