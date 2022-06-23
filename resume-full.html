@@ -31,7 +31,7 @@
       </header>
 
       <main>
-        <div class="main-col-left">
+        <div class="main-col-top">
           <fieldset class="field about">
             <legend>About</legend>
             <p class="about-text">
@@ -41,17 +41,27 @@
               earning a certificate from the Code Bootcamp at UT Austin,
               specializing in JavaScript and the MERN stack, Stephen is ready to offer excellent
               time management, work ethic, and attention to detail to a wide
-              range of professional projects. Being flexible, reliable, quick to adapt,
+              range of professional projects. Being reliable, passionate, quick to adapt,
               and known by colleagues as friendly and easy to work with
               in both large and small scale teams, as well as highly responsible
               and productive when working independently, Stephen is excited to
-              apply his experience and passion in the diverse field of web
+              advance his experience in the diverse field of web
               development.
             </p>
           </fieldset>
+        </div>
 
+        <div class="main-col-bottom">
+        <div class="main-col-left">
           <fieldset class="field">
             <legend>Skills</legend>
+
+            <div class="skillz">
+              <h4>Languages / Technologies</h4>
+              <p>JavaScript, HTML, CSS/SCSS, React, GraphQL, SQL, MongoDB, Node, Express, Bootstrap, AJAX, RESTful APIs, SEO, PWAs, SPAs, Swipe, Jest/Mocha, Git</p>
+              <h4>DevOps</h4>
+              <p>MERN Stack, AGILE, TDD, MVC, GitHub, Heroku</p>
+            </div>
 
             <div class="cert-card">
               <fieldset class="cert-field">
@@ -66,49 +76,32 @@
                 </div>
               </fieldset>
             </div>
-
-            <div class="skillz">
-              <div class="skill-list">
-                <h4>Client Side</h4>
-
-                <p>JavaScript</p>
-                <p>React</p>
-                <p>CSS</p>
-                <p>Bootstrap</p>
-                <p>Mobile Responsive</p>
-                <p>HTML</p>
-
-                <h4>Server Side</h4>
-
-                <p>Node</p>
-                <p>Express</p>
-                <p>GraphQL</p>
-                <p>SQL</p>
-                <p>MongoDB</p>
-                <p>AJAX</p>
-              </div>
-
-              <div class="skill-list">
-                <h4>Technologies</h4>
-
-                <p>PWAs</p>
-                <p>SPAs</p>
-                <p>Swipe</p>
-                <p>Jest</p>
-                <p>Git</p>
-                <p>Heroku</p>
-
-                <h4>DevOps</h4>
-
-                <p>MERN Stack</p>
-                <p>AGILE</p>
-                <p>MVC</p>
-                <p>OOP</p>
-                <p>TDD</p>
-                <p>GitHub</p>
-              </div>
-            </div>
+            
           </fieldset>
+
+          <fieldset class="pro-field">
+            <legend>Projects</legend>
+                <p class="pro-header">
+                  <span class="bold">Project Title:</span>
+                    <a href="https://afternoon-harbor-62644.herokuapp.com/" target="_blank"><span class="pro-name">Travel Diary</span></a>
+                  <br>
+                  <a href="https://afternoon-harbor-62644.herokuapp.com/" target="_blank" class="link-font">
+                    <i class="fa-solid fa-globe fa-sm"></i>
+                    <span class="sm-space">https://afternoon-harbor-62644.herokuapp.com/</span>
+                  </a>
+                </p>
+                <ul class="pro-text">
+                  <li>
+                    A web application that hosts user made blog posts detailing travel stories and tips, featuring search and save functionality.
+                  </li>
+                  <li>
+                    Developed by a team of 4, my role was primarily creating the server and REST API using Node and Express, and displaying data to the pages using Handlebars.
+                  </li>
+                  <li>
+                    This app was built with a MVC design, utilizing a SQL database, Bootstrap/CSS for the front-end, Node/Express for the back-end, and is deployed to Heroku.
+                  </li>
+                </ul>
+        </fieldset>
         </div>
 
         <div class="main-col-right">
@@ -133,10 +126,6 @@
               </li>
               <li>
                 Intuition in finding creative solutions to unrehearsed problems.
-              </li>
-              <li>
-                Collaborating with a wide spectrum of colorful humans: as
-                composers, band mates, crew mates, clients, and audiences.
               </li>
             </ul>
 
@@ -173,32 +162,32 @@
             </ul>
           </fieldset>
 
-          <fieldset class="field">
-            <legend>Education</legend>
-            <div class="ed-deg">
-              <span class="title">A.A. In Foreign Language: French</span>
-              <br />
-              <span class="school">Austin Community College</span
-              ><span class="year"> - 2013</span>
-            </div>
-          </fieldset>
+        </div>
         </div>
       </main>
 
       <footer>
+      <div class="footer-left">
         <div class="links-container">
           <div class="links">
             <div class="icons">
+              <p><span class="bold">References</span></p>
               <p><span class="port">PORTFOLIO</span></p>
               <p><i class="fa-brands fa-github"></i></p>
               <p><i class="fa-brands fa-linkedin"></i></p>
             </div>
             <div class="space">
+              <p><span class="bold">:</span></p>
               <p><i class="fa-solid fa-caret-right fa-sm"></i></p>
               <p><i class="fa-solid fa-caret-right fa-sm"></i></p>
               <p><i class="fa-solid fa-caret-right fa-sm"></i></p>
             </div>
             <div class="urls">
+              <p>
+                <span class="url-txt">
+                  Available upon request.
+                </span>
+              </p>
               <p>
                 <a
                   href="https://strudelandcoffee.github.io/react-portfolio/"
@@ -223,10 +212,20 @@
           </div>
         </div>
 
-        <fieldset class="field ref">
-          <legend>References</legend>
-          <div>Available upon request.</div>
+        </div>
+
+        <div class="footer-right">
+        <fieldset class="field ed">
+          <legend class="ed-legend">Education</legend>
+          <div class="ed-deg">
+            <span class="title">A.A. In Foreign Language: French</span>
+            <br />
+            <span class="school">Austin Community College</span
+            ><span class="year"> - 2013</span>
+          </div>
         </fieldset>
+        </div>
+
       </footer>
     </div>
   </body>
