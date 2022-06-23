@@ -3,7 +3,7 @@
     --header-color: darkslateblue;
     --year-color: slateblue;
     --font-size-lg: 21px;
-    --font-size-md: 20px;
+    --font-size-md: 19px;
     --font-size-sm: 18px;
 }
 
@@ -22,7 +22,7 @@ body {
 
 .page {
     background-color: snow;
-    /* height: 1100px; */
+    height: 1100px;
     width: 850px;
     border: 1px solid black;
     margin-inline: auto;
@@ -50,19 +50,23 @@ em {
     color: var(--header-color);
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Header */
 header {
     background-image: linear-gradient(to right, black, lightslategray, snow);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 }
 
 .header-name {
     color: whitesmoke;
     font-size: 60px;
-    padding-top: 10px;
-    padding-bottom: 12px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     margin-left: 16px; 
 }
 
@@ -97,11 +101,24 @@ header {
 /* Main */
 main {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.main-col-top {
+    width: 100%;
+}
+
+.main-col-bottom {
+    width: 100%;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
 }
 
 .main-col-left {
@@ -116,7 +133,7 @@ main {
 .field {
     width: 91%;
     margin-inline: auto;
-    margin-top: 4px;
+    margin-top: 3px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -125,7 +142,7 @@ main {
     border-left: 1px solid gray;
     border-right: 1px solid white;
     border-bottom: 1px solid white;
-    box-shadow: 0 2px 4px lightGray;
+    box-shadow: 0 1px 4px rgb(226, 226, 226);
 }
 
 legend {
@@ -143,12 +160,12 @@ legend {
 
 /* About */
 .about {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 /* Skills */
 .cert-card {
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .cert-field {
@@ -163,7 +180,6 @@ legend {
 }
 
 .school {
-    /* font-weight: bold; */
     font-style: italic;
     font-size: var(--font-size-md);
 }
@@ -172,36 +188,43 @@ legend {
     color: var(--year-color);
 }
 
-.skillz {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
+.skillz p {
+    padding-left: 15px;
 }
 
-.skill-list {
-    text-align: left;
+.pro-field {
+    margin-top: 9px;
+    width: 91%;
+    margin-inline: auto;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 4px rgb(226, 226, 226);
 }
 
-.skill-list h4 {
-    text-decoration: underline;
-    margin: 3px 0;
+.pro-name {
+    font-size: 21px;
+    font-style: italic;
+    padding: 0 10px;
 }
 
-.skill-list p {
-    padding-left: 28px;
+.sm-space {
+    padding-left: 3px;
+}
+
+.link-font {
+    font-size: 17px;
 }
 
 /* Experience */
 .exp {
-    margin-bottom: 16px;
+    padding-bottom: 17px;
 }
 
 .work {
     border: none;
     border-top: 1px solid black;
-    /* margin: 5px 0 6px 0; */
     padding: 0;
     width: 80%;
 }
@@ -223,46 +246,56 @@ legend {
 }
 
 /* Education */
-.ed-card {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+.ed {
+    background-color: snow;
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    margin-top: 11px;
 }
 
-.ed-field {
-    width: 88%;
-    border: 1px solid gray;
-    box-shadow: 0 2px 3px lightGray;
+.ed-legend {
+    margin-inline: auto;
+    color: var(--header-color);
+    padding: 0 4px;
+    text-align: center;
 }
 
 .ed-deg {
-    /* margin: 1px 0; */
     text-align: center;
     line-height: 1.5;
-    padding-bottom: 2px;
 }
 
 /* Footer */
 footer {
     width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
     background-image: linear-gradient(to bottom right, white, whitesmoke, lightslategray);
-    padding-top: 24px;
-    padding-bottom: 33px;
+    padding-top: 7px;
+    padding-bottom: 15px;
+}
+
+.footer-left {
+    width: 60%;
+    padding-top: 8px;
+}
+
+.footer-right {
+    width: 40%;
 }
 
 /* Links */
 .links-container {
-    width: 60%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 11px;
-    padding-right: 2px;
+    margin: 0;
 }
 
 .port {
@@ -277,7 +310,6 @@ footer {
 }
 
 .icons {
-    /* width: 30%; */
     text-align: right;
 }
 
@@ -291,22 +323,13 @@ footer {
 }
 
 .urls p, .icons p, .space p {
-    padding-bottom: 4px;
+    padding-bottom: 2px;
 }
 
-.urls a, .icons a, .space a {
+.space p {
+    padding-top: 1px;
+}
+
+.url-txt, .urls a, .icons a, .space a {
     font-size: 17px;
-}
-
-/* References */
-.ref {
-    background-color: snow;
-    width: 30%;
-    margin-right: 42px;
-}
-
-.ref legend {
-    padding: 0 2px;
-    text-align: center;
-    margin: 0;
 }
