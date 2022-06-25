@@ -159,11 +159,11 @@ legend {
 }
 
 /* About */
-.about {
+.resume-about {
     margin-bottom: 8px;
 }
 
-.about-text {
+.resume-about-text {
     font-size: var(--font-size-sm);
 }
 
