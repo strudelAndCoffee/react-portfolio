@@ -163,6 +163,10 @@ legend {
     margin-bottom: 8px;
 }
 
+.about-text {
+    font-size: var(--font-size-sm);
+}
+
 /* Skills */
 .cert-card {
     padding-top: 10px;
