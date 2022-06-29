@@ -1,10 +1,10 @@
 :root {
-    --icon-color: royalblue;
+    --icon-color: rgb(33, 76, 204);
     --header-color: darkslateblue;
     --year-color: slateblue;
-    --font-size-lg: 21px;
-    --font-size-md: 19px;
-    --font-size-sm: 18px;
+    --font-size-lg: 19px;
+    --font-size-md: 18px;
+    --font-size-sm: 17px;
 }
 
 * {
@@ -21,7 +21,7 @@ body {
 }
 
 .page {
-    background-color: snow;
+    background-color: white;
     height: 1100px;
     width: 850px;
     border: 1px solid black;
@@ -42,7 +42,7 @@ em {
     font-size: 19px;
 }
 
-.resume-indent {
+.indent {
     padding-left: 45px;
 }
 
@@ -54,9 +54,13 @@ em {
     font-weight: bold;
 }
 
+.sm-pad-r {
+    padding-right: 2px;
+}
+
 /* Header */
 header {
-    background-image: linear-gradient(to right, black, lightslategray, snow);
+    background-image: linear-gradient(to right, black, lightslategray, white);
     display: flex;
     justify-content: space-between;
     margin-bottom: 3px;
@@ -64,26 +68,31 @@ header {
 
 .header-name {
     color: whitesmoke;
-    font-size: 60px;
-    padding-top: 5px;
+    font-size: 57px;
+    padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 16px; 
 }
 
 .header-info {
-    padding-right: 22px;
-    padding-top: 5px;
+    padding-right: 10px;
+    padding-top: 8px;
     display: flex;
     justify-content: center;
 }
 
 .header-icons {
-    text-align: center;
+    text-align: right;
     padding-right: 10px;
 }
 
+.ref-head {
+    color: black;
+    font-weight: bold;
+}
+
 .header-icons p {
-    padding: 3px 0;
+    padding: 2px 0;
 }
 
 .header-data {
@@ -91,7 +100,7 @@ header {
 }
 
 .header-data p {
-    padding: 3px 0;
+    padding: 2px 0;
 }
 
 .header-icon {
@@ -99,20 +108,17 @@ header {
 }
 
 /* Main */
+
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
 }
 
-.main-col-top {
-    width: 100%;
-}
-
-.main-col-bottom {
+.main-bottom {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -126,7 +132,7 @@ main {
 }
 
 .main-col-right {
-    width: 49%;
+    width: 50%;
 }
 
 /* Fields */
@@ -159,12 +165,14 @@ legend {
 }
 
 /* About */
-.resume-about {
-    margin-bottom: 8px;
+.about-text {
+    padding: 12px 10px 7px 12px;
 }
 
-.resume-about-text {
-    font-size: var(--font-size-sm);
+.about-start {
+    color: var(--year-color);
+    font-size: var(--font-size-lg);
+    font-weight: bold;
 }
 
 /* Skills */
@@ -184,6 +192,7 @@ legend {
 }
 
 .school {
+    /* font-weight: bold; */
     font-style: italic;
     font-size: var(--font-size-md);
 }
@@ -196,8 +205,9 @@ legend {
     padding-left: 15px;
 }
 
+/* Project */
 .pro-field {
-    margin-top: 9px;
+    margin-top: 3px;
     width: 91%;
     margin-inline: auto;
     border-top: 1px solid gray;
@@ -207,28 +217,48 @@ legend {
     box-shadow: 0 1px 4px rgb(226, 226, 226);
 }
 
+.pro-field article {
+    padding-bottom: 3px;
+}
+
+.pro-art-pad {
+    padding-top: 4px;
+}
+
+.pro-name-container {
+    text-align: center;
+}
+
 .pro-name {
     font-size: 21px;
     font-style: italic;
-    padding: 0 10px;
+    color: black;
+    padding-bottom: 2px;
 }
 
 .sm-space {
     padding-left: 3px;
 }
 
+.md-space {
+    padding-left: 18px;
+}
+
 .link-font {
+    /* padding-left: 19px; */
     font-size: 17px;
+    color: var(--year-color);
 }
 
 /* Experience */
 .exp {
-    padding-bottom: 17px;
+    margin-top: 10px;
 }
 
 .work {
     border: none;
     border-top: 1px solid black;
+    /* margin: 5px 0 6px 0; */
     padding: 0;
     width: 80%;
 }
@@ -249,48 +279,12 @@ legend {
     padding-bottom: 1px;
 }
 
-/* Education */
-
-.ed {
-    background-color: snow;
-    padding: 0;
-    padding-bottom: 5px;
-    margin: 0;
-    margin-top: 11px;
-}
-
-.ed-legend {
-    margin-inline: auto;
-    color: var(--header-color);
-    padding: 0 4px;
-    text-align: center;
-}
-
-.ed-deg {
-    text-align: center;
-    line-height: 1.5;
-}
-
 /* Footer */
 footer {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
     background-image: linear-gradient(to bottom right, white, whitesmoke, lightslategray);
-    padding-top: 7px;
-    padding-bottom: 15px;
-}
-
-.footer-left {
-    width: 60%;
-    padding-top: 8px;
-}
-
-.footer-right {
-    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 12px;
 }
 
 /* Links */
@@ -326,20 +320,10 @@ footer {
     text-align: left;
 }
 
-.urls p, .icons p, .space p {
-    padding-bottom: 2px;
+.urls p, .space p, .icons p {
+    padding-bottom: 3px;
 }
 
-.space p {
+.space p, .icons p {
     padding-top: 1px;
-}
-
-.url-txt, .urls a, .icons a, .space a {
-    font-size: 17px;
-}
-
-@media screen and (max-width: 720px) {
-    .resume-about-text {
-        font-size: var(--font-size-sm);
-    }
 }
