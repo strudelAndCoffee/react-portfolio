@@ -22,10 +22,10 @@ body {
 
 .page {
     background-color: white;
-    height: 1100px;
     width: 850px;
     border: 1px solid black;
     margin-inline: auto;
+    padding-bottom: 7px;
 }
 
 li {
@@ -244,53 +244,4 @@ legend {
 
 .work-list {
     padding-bottom: 1px;
-}
-
-/* Footer */
-footer {
-    width: 100%;
-    background-image: linear-gradient(to bottom right, white, whitesmoke, lightslategray);
-    padding-top: 20px;
-    padding-bottom: 12px;
-}
-
-/* Links */
-.links-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0;
-}
-
-.port {
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.links {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.icons {
-    text-align: right;
-}
-
-.space {
-    width: 6%;
-    text-align: center;
-}
-
-.urls {
-    text-align: left;
-}
-
-.urls p, .space p, .icons p {
-    padding-bottom: 3px;
-}
-
-.space p, .icons p {
-    padding-top: 1px;
 }
