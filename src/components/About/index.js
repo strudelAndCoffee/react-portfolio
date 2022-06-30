@@ -61,13 +61,9 @@ function About() {
             <p>
               <span className="indent">I</span> was born and raised in Austin, Texas, and still call it home. The person I am today was shaped by this city, my family, the lifelong friends I've made here, and the city's many communities, as is evident in my history thus far.
             </p>
-            <br />
-            <p>
-              <span className="indent">I</span> gained my primary education in the Austin Area Home Schoolers community, got my A.A. Degree in French from Austin Community College, and recently completed the Full Stack Web Development Code Bootcamp Certificate Program at the University of Texas. With over a decade of audio engineering experience, including recording, mixing/mastering, music production and performance, both in-studio and on-stage, and serving long-term positions at two local community staples (H-E-B groceries and The Soup Peddler restaurant,) I have been rewarded with my current life's worth of living, working, and playing in this rapidly changing city, and hope to continue to do so as we advance forward.
-            </p>  
               <p className="readmore-btn-container">
                 <button className="readmore-btn" onClick={handleBtnClick}>
-                  Read More<span className="indent-xs">:)</span>
+                  Read More?
                   {readMore && (
                     <IconContext.Provider value={{ size: "1.8rem" }}>
                       <AiFillHeart />
@@ -77,6 +73,10 @@ function About() {
               </p>
           {readMore && (
             <div>
+              <p>
+                <span className="indent">I</span> gained my primary education in the Austin Area Home Schoolers community, got my A.A. Degree in French from Austin Community College, and recently completed the Full Stack Web Development Code Bootcamp Certificate Program at the University of Texas. With over a decade of audio engineering experience, including recording, mixing/mastering, music production and performance, both in-studio and on-stage, and serving long-term positions at two local community staples (H-E-B groceries and The Soup Peddler restaurant,) I have been rewarded with my current life's worth of living, working, and playing in this rapidly changing city, and hope to continue to do so as we advance forward.
+              </p>  
+              <br />
               <p>
                 <span className="indent">Having</span> worked along side a wide spectrum of colorful humans, I hope to offer my unique experience and ever-evolving perspective to the professional endeavors I may find myself in. I will always hold onto my love of music, and will never abandon its creative outlets completely, but as I begin my change in careers, I will devote my time and energy fully to the fascinating and engaging field of website development! I am excited to keep up with new technologies, collaborate on challenging projects, and find creative solutions to unrehearsed problems. Though my coding qualifications are still in early development, I believe that my expertise in learning and self-teaching will allow me to quickly adapt and forge ahead in any unknown situation.
               </p>
@@ -90,10 +90,10 @@ function About() {
               </p>
               <br />
               <p>
-              Stay weird, 
-              </p>
+              Stay weird,
               <br />
-              <span className="indent-sm">~Stevie</span>
+              ~Stevie
+              </p>
               </div>
           )}
           </div>
