@@ -14,7 +14,7 @@ function Resume() {
             </div>
 
             <div className="resume-dl-link">
-                <a href="./assets/docs/Resume_Stephen-Trudell.pdf" download="Resume_Stephen-Trudell">
+                <a href="./assets/docs/Resume_Trudell,Stephen.pdf" download="Resume_Trudell,Stephen">
                     <FontAwesomeIcon icon={regular('file')} /> Download
                 </a>
             </div>
