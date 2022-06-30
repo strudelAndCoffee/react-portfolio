@@ -36,7 +36,6 @@ function About() {
           </div>
 
           <div className="profile-txt-holder">
-            <div className="profile-txt-banner">Brand Statement</div>
             <div className="profile-txt">
               <span className="indent">"Full</span> stack web developer leveraging
               over a decade of experience in audio engineering to provide

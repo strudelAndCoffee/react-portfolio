@@ -161,7 +161,7 @@ fieldset {
 
 legend {
   font-size: 1.5rem;
-  margin-left: 20px;
+  margin-inline: auto;
 }
 
 label {
@@ -477,6 +477,10 @@ footer {
 
   .nav-link {
     font-size: 1.2rem;
+  }
+
+  legend {
+    margin-left: 20px;
   }
 
   .about-bio {

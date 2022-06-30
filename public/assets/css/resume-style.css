@@ -74,39 +74,6 @@ header {
     margin-left: 16px; 
 }
 
-.header-info {
-    padding-right: 10px;
-    padding-top: 8px;
-    display: flex;
-    justify-content: center;
-}
-
-.header-icons {
-    text-align: right;
-    padding-right: 10px;
-}
-
-.ref-head {
-    color: black;
-    font-weight: bold;
-}
-
-.header-icons p {
-    padding: 2px 0;
-}
-
-.header-data {
-    text-align: left;
-}
-
-.header-data p {
-    padding: 2px 0;
-}
-
-.header-icon {
-    color: var(--icon-color);
-}
-
 /* Main */
 
 main {
