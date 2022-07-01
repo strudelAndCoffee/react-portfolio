@@ -1,10 +1,16 @@
 const express = require('express');
 const app = express();
 
-const db = require('./models');
+const sequelize = require('./config/connection');
 const PORT = 3001;
 
-db.sequelize.sync().then(() => {
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+const contactRoute = require('./contact-route.js');
+app.use('/contact', contactRoute);
+
+sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
         console.log(`Now listening on port ${PORT}`);
     });

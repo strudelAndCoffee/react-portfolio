@@ -1,19 +1,40 @@
-module.exports = (sequelize, DataTypes) => {
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
-    const Contact = sequelize.define("Contact", {
+class Contact extends Model {}
+
+Contact.init(
+    {
+        id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true
+        },
         name: {
             type: DataTypes.STRING,
             allowNull: false
         },
         email: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            unique: true,
+            validate: {
+                isEmail: true
+            }
         },
         message: {
             type: DataTypes.TEXT,
             allowNull: false
         }
-    });
+    },
+    {
+        sequelize,
+        timestamps: true,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'contact'
+    }
+);
 
-    return Contact;
-}
+module.exports = Contact;
