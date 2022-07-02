@@ -22,7 +22,7 @@ body {
 
 .page {
     background-color: white;
-    height: 1100px;
+    /* height: 1100px; */
     width: 850px;
     border: 1px solid black;
     margin-inline: auto;
@@ -89,8 +89,6 @@ header {
 .ref-head {
     color: black;
     font-weight: bold;
-    /* text-decoration: underline; */
-    /* font-style: italic; */
 }
 
 .header-icons p {
