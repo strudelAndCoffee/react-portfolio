@@ -16,21 +16,21 @@ function Contact() {
         }
     };
 
-    const [formName, setFormName] = useState('');
-    const [formEmail, setFormEmail] = useState('');
-    const [formMsg, setFormMsg] = useState('');
+    // const [formName, setFormName] = useState('');
+    // const [formEmail, setFormEmail] = useState('');
+    // const [formMsg, setFormMsg] = useState('');
 
-    function changeHandler(event) {
-        if (event.target.name === "name") {
-          setFormName(event.target.value);
-        }
-        if (event.target.name === "email") {
-            setFormEmail(event.target.value);
-        }
-        if (event.target.name === "message") {
-            setFormMsg(event.target.value);
-        }
-    };
+    // function changeHandler(event) {
+    //     if (event.target.name === "name") {
+    //       setFormName(event.target.value);
+    //     }
+    //     if (event.target.name === "email") {
+    //         setFormEmail(event.target.value);
+    //     }
+    //     if (event.target.name === "message") {
+    //         setFormMsg(event.target.value);
+    //     }
+    // };
 
     function submitHandler(event) {
         event.preventDefault();
@@ -56,7 +56,7 @@ function Contact() {
                         name="name"
                         className="form-input"
                         onBlur={inputHandler}
-                        onChange={changeHandler}
+                        // onChange={changeHandler}
                     />
                     <br />
                     <label htmlFor="email">Email </label>
@@ -65,7 +65,7 @@ function Contact() {
                         name="email"
                         className="form-input"
                         onBlur={inputHandler} 
-                        onChange={changeHandler}
+                        // onChange={changeHandler}
                     />
                     <br />
                     <label htmlFor="message">Message</label>
@@ -73,7 +73,7 @@ function Contact() {
                         name="message"
                         className="form-text"
                         onBlur={inputHandler}
-                        onChange={changeHandler}
+                        // onChange={changeHandler}
                     ></textarea>
                     <p>{errorMsg}</p>
                     <button type="submit" className="form-btn">Submit</button>

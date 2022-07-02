@@ -22,10 +22,10 @@ body {
 
 .page {
     background-color: white;
+    height: 1100px;
     width: 850px;
     border: 1px solid black;
     margin-inline: auto;
-    padding-bottom: 7px;
 }
 
 li {
@@ -74,6 +74,41 @@ header {
     margin-left: 16px; 
 }
 
+.header-info {
+    padding-right: 10px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-icons {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.ref-head {
+    color: black;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    /* font-style: italic; */
+}
+
+.header-icons p {
+    padding: 2px 0;
+}
+
+.header-data {
+    text-align: left;
+}
+
+.header-data p {
+    padding: 2px 0;
+}
+
+.header-icon {
+    color: var(--icon-color);
+}
+
 /* Main */
 
 main {
@@ -107,6 +142,7 @@ main {
     width: 91%;
     margin-inline: auto;
     margin-top: 3px;
+    /* margin-bottom: 5px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -133,7 +169,7 @@ legend {
 
 /* About */
 .about-text {
-    padding: 12px 10px 7px 12px;
+    padding: 8px 10px 5px 12px;
 }
 
 .about-start {
@@ -185,11 +221,11 @@ legend {
 }
 
 .pro-field article {
-    padding-bottom: 3px;
+    padding-bottom: 4px;
 }
 
 .pro-art-pad {
-    padding-top: 4px;
+    margin-top: 7px;
 }
 
 .pro-name-container {
@@ -244,4 +280,53 @@ legend {
 
 .work-list {
     padding-bottom: 1px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, white, whitesmoke, lightslategray);
+    padding-top: 7px;
+    padding-bottom: 1px;
+}
+
+/* Links */
+.links-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.port {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.icons {
+    text-align: right;
+}
+
+.space {
+    width: 6%;
+    text-align: center;
+}
+
+.urls {
+    text-align: left;
+}
+
+.urls p, .space p, .icons p {
+    padding-bottom: 3px;
+}
+
+.space p, .icons p {
+    padding-top: 1px;
 }
