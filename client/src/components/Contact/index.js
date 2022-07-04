@@ -5,7 +5,7 @@ import React, { useState, useRef } from 'react';
 function Contact() {
     // error message that appears above submit button in form
     const [ errorMsg, setErrorMsg ] = useState('');
-    const [formState, setFormState] = useState({ name: '', email: '', message: ''});
+    const [ formState, setFormState ] = useState({ name: '', email: '', message: ''});
 
     const nameRef = useRef(null);
     const emailRef = useRef(null);
@@ -14,7 +14,24 @@ function Contact() {
     // when any form input blurs, check if value exists
     function inputHandler(event) {
         if (!event.target.value.length) {
-            setErrorMsg(`Please add your ${event.target.name}`);
+            let name = event.target.name;
+            
+            switch(name) {
+                case "name":
+                    setErrorMsg('Please add your name');
+                    nameRef.current.focus();
+                    break;
+                case "email":
+                    setErrorMsg('Please add your email');
+                    emailRef.current.focus();
+                    break;
+                case "message":
+                    setErrorMsg('Please add your message');
+                    msgRef.current.focus();
+                    break;
+                default:
+                    break;
+            }
         } else {
             setErrorMsg('');
         }
@@ -31,9 +48,6 @@ function Contact() {
 
     const submitHandler = async event => {
         event.preventDefault();
-        nameRef.current.value = '';
-        emailRef.current.value = '';
-        msgRef.current.value = '';
 
         if (formState.name.length && formState.email.length && formState.message.length) {
             try {
@@ -51,7 +65,18 @@ function Contact() {
                 console.error(err);
             }
         } else {
-            setErrorMsg("Please fill out all fields.");
+            if (!formState.name.length) {
+                setErrorMsg('Please add your name');
+                nameRef.current.focus();
+            }
+            else if (!formState.email.length) {
+                setErrorMsg('Please add your email');
+                emailRef.current.focus();
+            }
+            else {
+                setErrorMsg('Please add your message');
+                msgRef.current.focus();
+            }
             return;
         }
 
@@ -60,6 +85,9 @@ function Contact() {
             email: '',
             message: ''
         });
+        nameRef.current.value = '';
+        emailRef.current.value = '';
+        msgRef.current.value = '';
     };
 
     return(
