@@ -1,11 +1,15 @@
 // CONTACT
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 function Contact() {
     // error message that appears above submit button in form
     const [ errorMsg, setErrorMsg ] = useState('');
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
+
+    const nameRef = useRef(null);
+    const emailRef = useRef(null);
+    const msgRef = useRef(null);
 
     // when any form input blurs, check if value exists
     function inputHandler(event) {
@@ -27,6 +31,9 @@ function Contact() {
 
     const submitHandler = async event => {
         event.preventDefault();
+        nameRef.current.value = '';
+        emailRef.current.value = '';
+        msgRef.current.value = '';
 
         if (formState.name.length && formState.email.length && formState.message.length) {
             try {
@@ -53,8 +60,6 @@ function Contact() {
             email: '',
             message: ''
         });
-
-        window.location.reload();
     };
 
     return(
@@ -69,6 +74,7 @@ function Contact() {
                         type="text"
                         name="name"
                         className="form-input"
+                        ref={nameRef}
                         onBlur={inputHandler}
                         onChange={changeHandler}
                     />
@@ -78,6 +84,7 @@ function Contact() {
                         type="email"
                         name="email"
                         className="form-input"
+                        ref={emailRef}
                         onBlur={inputHandler} 
                         onChange={changeHandler}
                     />
@@ -86,6 +93,7 @@ function Contact() {
                     <textarea
                         name="message"
                         className="form-text"
+                        ref={msgRef}
                         onBlur={inputHandler}
                         onChange={changeHandler}
                     ></textarea>
