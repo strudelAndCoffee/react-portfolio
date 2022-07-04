@@ -10,13 +10,32 @@ router.get('/', (req, res) => {
     })
 });
 
-router.post('/', (req, res) => {
+router.post('/contact', (req, res) => {
     Contact.create({
         name: req.body.name,
         email: req.body.email,
         message: req.body.message
     })
     .then(data => res.json(data))
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.delete('/contact/:id', (req, res) => {
+    Contact.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(data => {
+        if (!data) {
+            res.status(404).json({ message: "No contact found with that ID." });
+            return;
+        }
+        res.json(data)
+    })
     .catch(err => {
         console.log(err);
         res.status(500).json(err);

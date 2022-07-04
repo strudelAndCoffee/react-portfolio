@@ -36,7 +36,22 @@ function Contact() {
         event.preventDefault();
 
         if (formName.length && formEmail.length && formMsg.length) {
-            alert("form submit");
+            const response = fetch('http://localhost:3001/api/contact', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: formName,
+                    email: formEmail,
+                    message: formMsg
+                }),
+                headers: { 'Content-Type': 'application/json' }
+            });
+
+            if (response.ok) {
+                setFormName('');
+                setFormEmail('');
+                setFormMsg('');
+                alert("response ok");
+            }
         } else {
             alert("Please fill out all fields before submitting");
         }
