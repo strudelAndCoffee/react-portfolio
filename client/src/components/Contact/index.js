@@ -3,58 +3,66 @@
 import React, { useState } from 'react';
 
 function Contact() {
-
     // error message that appears above submit button in form
     const [ errorMsg, setErrorMsg ] = useState('');
+    const [ activeErr, setActiveErr ] = useState(false);
+    const [formState, setFormState] = useState({ name: '', email: '', message: ''});
 
     // when any form input blurs, check if value exists
     function inputHandler(event) {
         if (!event.target.value.length) {
             setErrorMsg(`Please add your ${event.target.name}`);
+            setActiveErr(true);
         } else {
             setErrorMsg('');
+            setActiveErr(false);
         }
     };
 
-    const [formName, setFormName] = useState('');
-    const [formEmail, setFormEmail] = useState('');
-    const [formMsg, setFormMsg] = useState('');
-
-    function changeHandler(event) {
-        if (event.target.name === "name") {
-          setFormName(event.target.value);
-        }
-        if (event.target.name === "email") {
-            setFormEmail(event.target.value);
-        }
-        if (event.target.name === "message") {
-            setFormMsg(event.target.value);
-        }
+    const changeHandler = (event) => {
+        const { name, value } = event.target;
+    
+        setFormState({
+          ...formState,
+          [name]: value,
+        });
     };
 
-    function submitHandler(event) {
+    const submitHandler = async event => {
         event.preventDefault();
 
-        if (formName.length && formEmail.length && formMsg.length) {
-            const response = fetch('http://localhost:3001/api/contact', {
-                method: 'POST',
-                body: JSON.stringify({
-                    name: formName,
-                    email: formEmail,
-                    message: formMsg
-                }),
-                headers: { 'Content-Type': 'application/json' }
-            });
+        if (activeErr) {
+            alert("Please complete form before submitting...");
+            return;
+        }
 
-            if (response.ok) {
-                setFormName('');
-                setFormEmail('');
-                setFormMsg('');
-                alert("response ok");
+        if (formState.name.length && formState.email.length && formState.message.length) {
+            try {
+                const { name, email, message } = formState;
+                fetch('http://localhost:3001/api/contact', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        message: message
+                    }),
+                    headers: { 'Content-Type': 'application/json' }
+                })
+            } catch (err) {
+                console.error(err);
             }
         } else {
-            alert("Please fill out all fields before submitting");
+            setErrorMsg("Please complete the form before sending");
+            return;
         }
+
+        setFormState({
+            name: '',
+            email: '',
+            message: ''
+        });
+
+        window.location.reload();
     };
 
     return(
@@ -67,7 +75,7 @@ function Contact() {
                     <div>
                         <small><em>Note: this form is currently out of order.</em></small>
                     </div>
-                    <label htmlFor="name">Name </label>
+                    <label htmlFor="name">Name</label>
                     <input
                         type="text"
                         name="name"
@@ -76,7 +84,7 @@ function Contact() {
                         onChange={changeHandler}
                     />
                     <br />
-                    <label htmlFor="email">Email </label>
+                    <label htmlFor="email">Email</label>
                     <input
                         type="email"
                         name="email"
