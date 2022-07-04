@@ -64,9 +64,6 @@ function Contact() {
                     <legend>
                         <span className="color-2">Contact</span>
                     </legend>
-                    <div>
-                        <small><em>Note: this form is currently out of order.</em></small>
-                    </div>
                     <label htmlFor="name">Name</label>
                     <input
                         type="text"
