@@ -35,9 +35,11 @@ function Contact() {
     function submitHandler(event) {
         event.preventDefault();
 
-
-        // no database set up for contact message handling
-        alert("We are unable to process your request at this time. You may contact Stevie using his email address listed below. Thank you!");
+        if (formName.length && formEmail.length && formMsg.length) {
+            alert("form submit");
+        } else {
+            alert("Please fill out all fields before submitting");
+        }
     };
 
     return(
