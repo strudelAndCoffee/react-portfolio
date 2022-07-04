@@ -17,7 +17,8 @@ Contact.init(
         },
         email: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            unique: false
         },
         message: {
             type: DataTypes.TEXT,

@@ -5,17 +5,14 @@ import React, { useState } from 'react';
 function Contact() {
     // error message that appears above submit button in form
     const [ errorMsg, setErrorMsg ] = useState('');
-    const [ activeErr, setActiveErr ] = useState(false);
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
 
     // when any form input blurs, check if value exists
     function inputHandler(event) {
         if (!event.target.value.length) {
             setErrorMsg(`Please add your ${event.target.name}`);
-            setActiveErr(true);
         } else {
             setErrorMsg('');
-            setActiveErr(false);
         }
     };
 
@@ -30,11 +27,6 @@ function Contact() {
 
     const submitHandler = async event => {
         event.preventDefault();
-
-        if (activeErr) {
-            alert("Please complete form before submitting...");
-            return;
-        }
 
         if (formState.name.length && formState.email.length && formState.message.length) {
             try {
@@ -52,7 +44,7 @@ function Contact() {
                 console.error(err);
             }
         } else {
-            setErrorMsg("Please complete the form before sending");
+            setErrorMsg("Please fill out all fields.");
             return;
         }
 
