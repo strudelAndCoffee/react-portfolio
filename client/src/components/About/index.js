@@ -19,6 +19,15 @@ function About() {
     e.target.className = "disappear";
     e.target.innerHTML = "<span></span>";
     setReadMore(true);
+
+    try {
+      fetch('http://localhost:3001/api/readmore', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      })
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   return (
