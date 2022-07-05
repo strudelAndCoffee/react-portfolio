@@ -9,6 +9,8 @@ function Footer() {
         <footer>
             <div className="footer-left">
                 <small><FontAwesomeIcon icon={regular('copyright')} />2022 Built with <FontAwesomeIcon icon={regular('heart')} /> by strudelAndCoffee</small>
+                <br />
+                
             </div>
             <div className="footer-right">
                 <a href="https://github.com/strudelAndCoffee" target="_blank" rel="noreferrer" className="footer-link">

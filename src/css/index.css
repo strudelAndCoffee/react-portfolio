@@ -110,10 +110,10 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 69px;
   background-color: var(--bg-color);
   box-shadow: 0 -1px 4px var(--txt-color);
-  padding-bottom: 3px;
+  /* padding-bottom: 3px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -127,6 +127,7 @@ header h1 {
   padding: 0;
   text-shadow: 1px 1px 2px black;
   font-family: var(--big-font);
+  font-size: 1.5rem;
   color: var(--txt-dk-color);
   font-style: italic;
 }
@@ -490,15 +491,16 @@ label {
 /* Footer Component */
 footer {
   width: 100%;
-  height: 69px;
+  height: 59px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: var(--bg-dk-color);
   position: fixed;
   bottom: 0;
-  padding-top: 1vh;
-  box-shadow: 0 -2px 3px var(--bg-color);
+  padding-top: 3px;
+  box-shadow: 0 0 2px var(--bg-color);
 }
 
 /* footer {
@@ -534,7 +536,7 @@ footer div {
 }
 
 .footer-link svg {
-  height: 33px;
+  height: 23px;
 }
 
 /* NoMatch Component */
@@ -607,9 +609,9 @@ footer div {
   }
 
   footer {
-    height: 40px;
+    height: 45px;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
  
