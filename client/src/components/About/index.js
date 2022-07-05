@@ -94,7 +94,7 @@ function About() {
               <br />
               ~Stevie
               </p>
-              </div>
+            </div>
           )}
           </div>
         </fieldset>

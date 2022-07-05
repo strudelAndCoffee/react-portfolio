@@ -53,6 +53,10 @@ body {
   color: var(--txt-dk-color);
 }
 
+.align-txt-center {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
   position: relative;

@@ -6,6 +6,7 @@ function Contact() {
     // error message that appears above submit button in form
     const [ errorMsg, setErrorMsg ] = useState('');
     const [ formState, setFormState ] = useState({ name: '', email: '', message: ''});
+    const [ blankForm, setBlankForm ] = useState(true);
 
     const nameRef = useRef(null);
     const emailRef = useRef(null);
@@ -19,15 +20,12 @@ function Contact() {
             switch(name) {
                 case "name":
                     setErrorMsg('Please add your name');
-                    nameRef.current.focus();
                     break;
                 case "email":
                     setErrorMsg('Please add your email');
-                    emailRef.current.focus();
                     break;
                 case "message":
                     setErrorMsg('Please add your message');
-                    msgRef.current.focus();
                     break;
                 default:
                     break;
@@ -49,10 +47,26 @@ function Contact() {
     const submitHandler = async event => {
         event.preventDefault();
 
+        if (!formState.name.length) {
+            setErrorMsg('Please add your name');
+            nameRef.current.focus();
+            return;
+        }
+        else if (!formState.email.length) {
+            setErrorMsg('Please add your email');
+            emailRef.current.focus();
+            return;
+        }
+        else if (!formState.message.length) {
+            setErrorMsg('Please add your message');
+            msgRef.current.focus();
+            return;
+        }
+
         if (formState.name.length && formState.email.length && formState.message.length) {
             try {
                 const { name, email, message } = formState;
-                fetch('http://localhost:3001/api/contact', {
+                const response = fetch('http://localhost:3001/api/contact', {
                     method: 'POST',
                     body: JSON.stringify({
                         name: name,
@@ -61,7 +75,24 @@ function Contact() {
                     }),
                     headers: { 'Content-Type': 'application/json' }
                 })
+
+                if (response) {
+                    setFormState({
+                        name: '',
+                        email: '',
+                        message: ''
+                    });
+                    nameRef.current.value = '';
+                    emailRef.current.value = '';
+                    msgRef.current.value = '';
+            
+                    setBlankForm(false);
+                    return;
+                } else {
+                    alert("An error occured while sending your message. If the issue persists, please contact Stevie via his email listed below. We are sorry for the inconvenience!");
+                }
             } catch (err) {
+                alert("An error occured while sending your message. Please try again, or contact Stevie via email (listed below). We are sorry for the inconvenience!");
                 console.error(err);
             }
         } else {
@@ -77,22 +108,13 @@ function Contact() {
                 setErrorMsg('Please add your message');
                 msgRef.current.focus();
             }
-            return;
         }
-
-        setFormState({
-            name: '',
-            email: '',
-            message: ''
-        });
-        nameRef.current.value = '';
-        emailRef.current.value = '';
-        msgRef.current.value = '';
     };
 
     return(
         <section className="Contact">
-            <form id="contact-form" onSubmit={submitHandler}>
+            {blankForm
+            ? <form id="contact-form" onSubmit={submitHandler}>
                 <fieldset>
                     <legend>
                         <span className="color-2">Contact</span>
@@ -126,9 +148,15 @@ function Contact() {
                         onChange={changeHandler}
                     ></textarea>
                     <p>{errorMsg}</p>
-                    <button type="submit" className="form-btn">Submit</button>
+                    <button type="submit" className="form-btn" onClick={submitHandler}>Submit</button>
                 </fieldset>
-            </form>
+             </form>
+            : <div className="align-txt-center">
+                Thank you for reaching out! Please allow me a couple business days to review your message, and I will get back to you as soon as I can.
+                <br />
+                ~Stevie
+            </div>
+            }
         </section>
     );
 };
