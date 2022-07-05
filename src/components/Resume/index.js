@@ -20,11 +20,12 @@ function Resume() {
             </div>
 
             <div className="resume-fields"> 
-            <form className="resume-card">
-                <fieldset className="resume-filed">
-                    <legend className="center-legend">
+            <article className="resume-card">
+                {/* <fieldset className="resume-filed"> */}
+                    {/* <legend className="center-legend">
                         <span className="color-2">Languages / Technologies</span>
-                    </legend>
+                    </legend> */}
+                    <h3 className="resume-card-header">Languages / Technologies</h3>
                     <div className="skills-text">
                         <div className="skills-group-card">
                             <div className="skills-card-container">
@@ -55,14 +56,15 @@ function Resume() {
                             </div>
                         </div>
                     </div>
-                </fieldset>
-            </form>
+                {/* </fieldset> */}
+            </article>
 
-            <form className="resume-card">
-                <fieldset className="resume-filed">
+            <article className="resume-card">
+                {/* <fieldset className="resume-filed">
                     <legend className="center-legend">
                         <span className="color-2">Operations</span>
-                    </legend>
+                    </legend> */}
+                    <h3 className="resume-card-header">Operations</h3>
                     <div className="skills-text">
                         <div className="skills-group-card">
                             <div className="skills-card-container">
@@ -91,8 +93,8 @@ function Resume() {
                             </div>
                         </div>
                     </div>
-                </fieldset>
-            </form>
+                {/* </fieldset> */}
+            </article>
             </div>
         </section>
     );
