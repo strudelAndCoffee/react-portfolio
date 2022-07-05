@@ -16,27 +16,26 @@
   line-height: 1.5;
 }
 
-/* Scrollbar style */
+
+
 /* code copied and modified from W3 Schools */
-/* width */
+
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 9px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: var(--bg-dk-color); 
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #777; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #444; 
 }
+
 
 /* Animations */
 @keyframes btn-hover {
@@ -66,8 +65,9 @@
 
 body { 
   font-size: 1.1rem;
-  background-image: url('../assets/images/carlos-alfonso-skyline-clip-resize.png');
+  background-image: url('../assets/images/carlos-alfonso-skyline-clip-resize-bw.png');
   background-position: center top;
+  background-position: -webkit-sticky;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,6 +107,7 @@ li {
 
 /* Header Component */
 header {
+  position: -webkit-sticky;
   position: fixed;
   top: 0;
   width: 100%;

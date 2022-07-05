@@ -13,7 +13,7 @@ import NoMatch from './components/NoMatch';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App" id="bg-image">
         <Header />
         <main>
           <Routes>
