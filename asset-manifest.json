@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.e1b0306b.css",
-    "main.js": "/react-portfolio/static/js/main.8988e3b0.js",
+    "main.css": "/react-portfolio/static/css/main.e8dc0678.css",
+    "main.js": "/react-portfolio/static/js/main.302fa8ed.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/story-team.png": "/react-portfolio/static/media/story-team.96e41645a5c977a46c86.png",
+    "static/media/carlos-alfonso-skyline-clip-resize.png": "/react-portfolio/static/media/carlos-alfonso-skyline-clip-resize.b52c5a1d8469abc1fce4.png",
     "static/media/demo-screenshot-2.png": "/react-portfolio/static/media/demo-screenshot-2.250b33c4ef3030a88b27.png",
     "static/media/spacex.png": "/react-portfolio/static/media/spacex.f4e9e34c5c405a8c7b2e.png",
     "static/media/travel-diary.png": "/react-portfolio/static/media/travel-diary.a26ef65061fea278e841.png",
@@ -13,12 +13,12 @@
     "static/media/git-it-done.png": "/react-portfolio/static/media/git-it-done.4dd5e67d8d64e232a6ee.png",
     "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.870578e7a5e3351fbcf9.png",
     "index.html": "/react-portfolio/index.html",
-    "main.e1b0306b.css.map": "/react-portfolio/static/css/main.e1b0306b.css.map",
-    "main.8988e3b0.js.map": "/react-portfolio/static/js/main.8988e3b0.js.map",
+    "main.e8dc0678.css.map": "/react-portfolio/static/css/main.e8dc0678.css.map",
+    "main.302fa8ed.js.map": "/react-portfolio/static/js/main.302fa8ed.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1b0306b.css",
-    "static/js/main.8988e3b0.js"
+    "static/css/main.e8dc0678.css",
+    "static/js/main.302fa8ed.js"
   ]
 }
