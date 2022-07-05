@@ -28,13 +28,13 @@ function Contact() {
         <section className="Contact">
             <form id="contact-form" onSubmit={submitHandler}>
                 <fieldset>
-                    <legend>
+                    {/* <legend>
                         <span className="color-2">Contact</span>
-                    </legend>
+                    </legend> */}
                     <div>
                         <small><em>Note: this form is currently out of order.</em></small>
                     </div>
-                    <label htmlFor="name">Name </label>
+                    <label htmlFor="name">Your Name</label>
                     <input
                         type="text"
                         name="name"

@@ -12,12 +12,19 @@ function Resume() {
                     <a href="./resume-full.html">View Full Resume</a>
                 </div>
             </div>
+            <div className="resume-btn-container">
+                <div class="resume-btn">
+                    <a href="./assets/docs/Resume_Trudell,Stephen.pdf" download="Resume_Trudell,Stephen">
+                        <FontAwesomeIcon icon={regular('file')} /> Download
+                    </a>
+                </div>
+            </div>
 
-            <div className="resume-dl-link">
+            {/* <div className="resume-dl-link">
                 <a href="./assets/docs/Resume_Trudell,Stephen.pdf" download="Resume_Trudell,Stephen">
                     <FontAwesomeIcon icon={regular('file')} /> Download
                 </a>
-            </div>
+            </div> */}
 
             <div className="resume-fields"> 
             <article className="resume-card">

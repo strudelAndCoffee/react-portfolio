@@ -5,7 +5,7 @@
   --fieldset-bg-color: #0c0a16f1;
   --bg-dk-color: #020405;
   --txt-color: #e2ead8;
-  --txt-dk-color: #74e5ef;
+  --txt-dk-color: #32c9d7;
   --txt-trans-color: #74e5efcc;
   --big-font: 'Times New Roman', Times, serif;
 }
@@ -236,7 +236,7 @@ label {
 }
 
 .profile {
-  width: 50%;
+  width: 90%;
   margin-top: 10vh;
   padding: 5px 2px 5px 15px;
   background-color: var(--fieldset-bg-color);
@@ -245,6 +245,10 @@ label {
 .profile h2 {
   text-align: center;
   color: var(--txt-dk-color);
+}
+
+.profile-txt {
+  padding-right: 8px;
 }
 
 .profile-txt p {
@@ -273,12 +277,15 @@ label {
 } */
 
 .About {
+  width: 100%;
   padding: 0 30px;
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .about-bio {
-  width: 94vw;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -419,7 +426,7 @@ label {
 .resume-btn-container {
   width: 100%;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .resume-btn a {
@@ -436,19 +443,20 @@ label {
   background-color: black;
 }
 
-.resume-dl-link {
+/* .resume-dl-link {
   width: 100%;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 55px;
 }
 
 .resume-dl-link a {
-  color: var(--txt-dk-color);
+  color: var(--bg-dk-color);
 }
 
 .resume-dl-link a:hover {
-  text-shadow: 0 0 3px var(--txt-dk-color);
-}
+  color: var(--txt-dk-color);
+  text-shadow: 0 0 2px black;
+} */
 
 .resume-fields {
   display: flex;
@@ -481,13 +489,24 @@ label {
 
 /* Footer Component */
 footer {
-  width: 100vw;
+  width: 100%;
   height: 69px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--bg-dk-color);
+  position: fixed;
+  bottom: 0;
+  padding-top: 1vh;
+  box-shadow: 0 -2px 3px var(--bg-color);
 }
+
+/* footer {
+  position: fixed;
+  bottom: 0;
+  padding-top: 1vh;
+  box-shadow: 0 -2px 3px var(--bg-color);
+} */
 
 footer div {
   width: max-content;
@@ -533,7 +552,7 @@ footer div {
   } */
 
   .about-bio {
-    width: 100%;
+    width: 94vw;
   }
 }
 
@@ -563,8 +582,8 @@ footer div {
     margin-left: 20px;
   }
 
-  .about-bio {
-    width: 680px;
+  .about-bio, .profile {
+    width: 780px;
   }
 
   .Resume {
@@ -647,12 +666,5 @@ footer div {
     flex: 0 0 48%;
     display: flex;
     justify-content: center;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    padding-top: 1vh;
-    box-shadow: 0 -2px 3px var(--bg-color);
   }
 }
