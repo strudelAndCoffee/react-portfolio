@@ -1,2 +1,4 @@
 const Contact = require('./Contact');
-module.exports = Contact;
+const ReadMore = require('./ReadMore');
+
+module.exports = { Contact, ReadMore };
