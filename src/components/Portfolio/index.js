@@ -51,7 +51,7 @@ function Portfolio() {
     ]);
 
     return(
-        <section className="Portfolio">
+        <section className="Portfolio no-scrollbar">
             {apps.map(app => (
                 <Project
                     imgSrc={app.imgSrc}
