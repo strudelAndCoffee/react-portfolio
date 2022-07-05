@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.a4e96fdb.css",
+    "main.css": "/react-portfolio/static/css/main.29b19e72.css",
     "main.js": "/react-portfolio/static/js/main.9059473c.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/carlos-alfonso-skyline-clip-resize-bw.png": "/react-portfolio/static/media/carlos-alfonso-skyline-clip-resize-bw.b52c5a1d8469abc1fce4.png",
@@ -13,12 +13,12 @@
     "static/media/git-it-done.png": "/react-portfolio/static/media/git-it-done.4dd5e67d8d64e232a6ee.png",
     "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.870578e7a5e3351fbcf9.png",
     "index.html": "/react-portfolio/index.html",
-    "main.a4e96fdb.css.map": "/react-portfolio/static/css/main.a4e96fdb.css.map",
+    "main.29b19e72.css.map": "/react-portfolio/static/css/main.29b19e72.css.map",
     "main.9059473c.js.map": "/react-portfolio/static/js/main.9059473c.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4e96fdb.css",
+    "static/css/main.29b19e72.css",
     "static/js/main.9059473c.js"
   ]
 }
