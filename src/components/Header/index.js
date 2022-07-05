@@ -7,9 +7,9 @@ function Header() {
     return(
         <header>
             <Link to='/react-portfolio/'>
-            <h1>
-                Stephen Trudell
-            </h1>
+                <h1>
+                    Stephen Trudell
+                </h1>
             </Link>
             <nav>
                 <NavLink to='/react-portfolio/portfolio' className='nav-link' activeClassName='nav-link active'>Portfolio</NavLink>
