@@ -14,7 +14,7 @@ function Project(props) {
     } = props;
 
     return(
-        <article className="Project">
+        <div className="Project">
             <a className="img-link" href={appUrl} target="_blank" rel="noreferrer">
                 <img 
                     src={require(`../../assets/images/${imgSrc}`)}
@@ -33,7 +33,7 @@ function Project(props) {
                 </IconContext.Provider>
                 <span className="indent-xs">View</span> GitHub Repository
             </a>
-        </article>
+        </div>
     );
 };
 

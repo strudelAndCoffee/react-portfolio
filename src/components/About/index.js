@@ -24,7 +24,7 @@ function About() {
   return (
     <section className="About">
 
-      <form className="about-form">
+      {/* <form className="about-form"> */}
 {/* 
         <div className="profile">
           <div className="profile-img-holder">
@@ -37,14 +37,16 @@ function About() {
 
         </div> */}
 
-        <fieldset className="about-bio">
-          <legend>
+        {/* <fieldset className="about-bio"> */}
+          {/* <legend>
             <span className="color-2">About Me</span>
-          </legend>
-          <div className="about-bio-txt">
-            <p>
-              <span className="indent">I</span> was born and raised in Austin, Texas, and still call it home. The person I am today was shaped by this city, my family, the lifelong friends I've made here, and the city's many communities, as is evident in my history thus far.
-            </p>
+          </legend> */}
+          
+          <article className="about-bio">
+            <h3 className="about-header">Long Story Short...</h3>
+              <p>
+                <span className="indent">I</span> was born and raised in Austin, Texas, and still call it home. The person I am today was shaped by this city, my family, the lifelong friends I've made here, and the city's many communities, as is evident in my history thus far.
+              </p>
               <p className="readmore-btn-container">
                 <button className="readmore-btn" onClick={handleBtnClick}>
                   Read More?
@@ -56,9 +58,13 @@ function About() {
                 </button>
               </p>
           {readMore && (
-            <div>
+            <>
               <p>
-                <span className="indent">I</span> gained my primary education in the Austin Area Home Schoolers community, got my A.A. Degree in French from Austin Community College, and recently completed the Full Stack Web Development Code Bootcamp Certificate Program at the University of Texas. With over a decade of audio engineering experience, including recording, mixing/mastering, music production and performance, both in-studio and on-stage, and serving long-term positions at two local community staples (H-E-B groceries and The Soup Peddler restaurant,) I have been rewarded with my current life's worth of living, working, and playing in this rapidly changing city, and hope to continue to do so as we advance forward.
+                ~ ~ ~ ~ ~ ~ ~
+              </p>
+              <br />
+              <p>
+                <span className="indent">I</span> gained my primary education in the Austin Area Home Schoolers community, received my A.A. Degree in French from Austin Community College, and recently completed the Full Stack Web Development Code Bootcamp Certificate Program at the University of Texas. With over a decade of audio engineering experience, including recording, mixing/mastering, music production and performance, both in-studio and on-stage, and serving long-term positions at two local community staples (H-E-B groceries and The Soup Peddler restaurant,) I have been rewarded with my current life's worth of living, working, and playing in this rapidly changing city, and hope to continue to do so as we advance forward.
               </p>  
               <br />
               <p>
@@ -68,83 +74,11 @@ function About() {
               <p>
                 <span className="indent">My</span> time so far has taught me that curiosity, commitment, kindness, originality, passion, and non-stop learning are what I value most. Lastly, I believe that in pursuing one's ambitions, to never doubt that success comes from learning through failure and set-backs, and through any type of change, the importance of nurturing culture, art and diversity should never be disregarded or deemed non-essential. These principles guide my direction as I seek new opportunities.
               </p>
-              <br />
-              <p>
-                <span className="indent">Thank</span> you for taking the time to learn about me - Please enjoy exploring my portfolio, and feel free to checkout out my social platforms, or contact me directly to learn even more! :)
-              </p>
-              <br />
-              <p>
-              Stay weird,
-              <br />
-              ~Stevie
-              </p>
-              </div>
+            </>
           )}
-          </div>
-        </fieldset>
-      </form>
-      
-
-      {/* <form className="bio-form">
-        
-        <fieldset>
-          <legend>
-            <span className="color-2">About Me</span>
-          </legend>
-
-            <div className="bio-form-top">
-
-              <div className="bio-img">
-                <img
-                  src={require(`../../assets/images/${bioImg[0].src}`)}
-                  alt={bioImg[0].alt}
-                  class="bio-img"
-                />
-              </div>
-              <div className="bio-text">
-                I am currently studying to become a full stack web developer at The University of Texas in Austin.
-                <br />
-                <br />
-                <span className="grow">
-                Austin has been my home my whole life, and it is my dream to continue to work, play, and create here 
-                in the city that I love.
-                </span>
-                <br />
-                <br />
-              </div>
-
-            </div>
-
-            <div className="bio-form-bottom">
-
-              <div className="bio-text">
-                I have been a musician and recording/mixing engineer for over a decade, but my work ethic and 
-                ambition pushes beyond the scope that working in the music business offers.
-                <br />
-                <br />
-                This is why I am devoting my time and talents to grow in the diverse field of web development.
-                I am eager to engage fully in the profession and offer my unique perspective, people skills,
-                and problem solving approaches. I have found that the creativity involved in building websites
-                and applications parallels the process of creating music, both individually and collaboratively. 
-                <br />
-                <br />
-                To reach me directly, please click the Contact tab, or email me at my email address listed below.
-                You can also visit my GitHub and LinkedIn profiles.
-                <br />
-                <br />
-                <div className="bio-sig">
-                  Thanks for visiting!
-                  <br />
-                  ~Stevie, a.k.a. strudelAndCoffee
-                </div>
-              </div>
-
-            </div>
-
-        </fieldset>
-
-      </form> */}
-
+          </article>
+        {/* </fieldset> */}
+      {/* </form> */}
     </section>
   );
 }

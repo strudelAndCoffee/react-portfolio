@@ -16,22 +16,6 @@ function Contact() {
         }
     };
 
-    // const [formName, setFormName] = useState('');
-    // const [formEmail, setFormEmail] = useState('');
-    // const [formMsg, setFormMsg] = useState('');
-
-    // function changeHandler(event) {
-    //     if (event.target.name === "name") {
-    //       setFormName(event.target.value);
-    //     }
-    //     if (event.target.name === "email") {
-    //         setFormEmail(event.target.value);
-    //     }
-    //     if (event.target.name === "message") {
-    //         setFormMsg(event.target.value);
-    //     }
-    // };
-
     function submitHandler(event) {
         event.preventDefault();
 
