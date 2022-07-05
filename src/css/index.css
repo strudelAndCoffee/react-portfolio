@@ -2,6 +2,7 @@
 
 :root {
   --bg-color: #0c0a16;
+  --fieldset-bg-color: #0c0a16db;
   --bg-dk-color: #020405;
   --txt-color: #e2ead8;
   --txt-dk-color: #74e5ef;
@@ -37,12 +38,16 @@
 
 @keyframes img-link-hover {
   from {width: 300px; bottom: 0;}
-  to {width: 302px; bottom: 2px; box-shadow: 0 1px 5px var(--txt-trans-color);}
+  to {width: 302px; bottom: 2px; box-shadow: 0 1px 3px black;}
 }
 
 body { 
-  background-color: var(--bg-dk-color);
   font-size: 1.1rem;
+  background-image: url('../assets/images/carlos-alfonso-skyline-clip-resize.png');
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .italic {
@@ -127,7 +132,6 @@ nav {
 }
 
 .nav-link.active {
-  text-decoration: underline;
   color: var(--txt-dk-color);
   text-shadow: 0 1px 2px black;
   animation-name: none;
@@ -136,12 +140,16 @@ nav {
 /* Main */
 main {
   padding: 10vh 0;
-  background-color: var(--bg-dk-color);
 }
 
 /* Form Components */
-.About, .Contact {
+.About {
   padding: 0 30px;
+  margin-top: 40px;
+}
+
+.Contact {
+  padding-inline: auto;
   margin-top: 40px;
 }
 
@@ -156,12 +164,13 @@ fieldset {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  background-color: var(--bg-color);
+  background-color: var(--fieldset-bg-color);
 }
 
 legend {
   font-size: 1.5rem;
   margin-inline: auto;
+  text-shadow: 0 -1px 1px black;
 }
 
 label {
@@ -191,45 +200,51 @@ label {
   cursor: pointer;
 }
 
-/* About Form */
-.about-form {
-  width: 100%;
+/* Home */
+.Home {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
-.profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.profile-img-holder {
+/* .profile-img-holder {
   flex: 0 0 25%;
   text-align: right;
-}
+} */
 
-.profile-txt-holder {
-  flex: 0 0 65%;
-  padding: 5px 2px 5px 15px;
-  background-color: #0c0a16;
-}
-
-.profile-txt-banner {
+/* .profile-txt-banner {
   font-size: 1.2rem;
   color: var(--txt-dk-color);
-}
+} */
 
-.profile-img {
+/* .profile-img {
   width: 206px;
   height: 206px;
+} */
+
+.profile {
+  width: 50%;
+  margin-top: 10vh;
+  padding: 5px 2px 5px 15px;
+  background-color: var(--fieldset-bg-color);
+}
+
+.profile h2 {
+  text-align: center;
+  color: var(--txt-dk-color);
 }
 
 .profile-txt {
   font-size: 1rem;
   font-weight: lighter;
   font-style: italic;
+}
+
+/* About Form */
+.about-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-bio {
@@ -456,12 +471,12 @@ footer div {
 }
 
 @media screen and (min-width: 512px) {
-  .profile {
+  /* .profile {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
     width: 90%;
-  }
+  } */
 
   .about-bio {
     width: 100%;
