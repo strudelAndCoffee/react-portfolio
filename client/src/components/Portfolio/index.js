@@ -1,6 +1,7 @@
 // PORTFOLIO
 
 import React, { useState } from 'react';
+import { Parallax } from 'react-parallax';
 import Project from '../Project';
 
 function Portfolio() {
@@ -51,7 +52,8 @@ function Portfolio() {
     ]);
 
     return(
-        <section className="Portfolio">
+        <Parallax blur={0} bgImage={require("../../assets/images/carlos-alfonso-skyline.png")} bgImageAlt="Austin skyline at dusk" strength={400}>
+        <div className="Portfolio">
             {apps.map(app => (
                 <Project
                     imgSrc={app.imgSrc}
@@ -62,7 +64,8 @@ function Portfolio() {
                     key={app.appTitle}
                 ></Project>
             ))}
-        </section>
+        </div>
+        </Parallax>
     );
 };
 

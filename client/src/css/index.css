@@ -41,8 +41,13 @@
 }
 
 body { 
-  background-color: var(--bg-dk-color);
   font-size: 1.1rem;
+  height: 100vh;
+  background-image: url("../assets/images/carlos-alfonso-skyline.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
 }
 
 .italic {
@@ -75,6 +80,10 @@ li {
 /* App.js */
 .App {
   color: var(--txt-color);
+}
+
+.welcome {
+  text-align: center;
 }
 
 /* Header Component */
@@ -138,16 +147,28 @@ nav {
 }
 
 /* Main */
-main {
-  padding: 10vh 0;
-  background-color: var(--bg-dk-color);
+/* main {
+  height: 100vh;
+} */
+
+/* section {
+  height: 100vh;
+} */
+
+.About, .Contact, .Home, .Resume {
+  padding-top: 14vh;
+}
+
+.About {
+  padding-bottom: 100px;
 }
 
 /* Form Components */
-.About, .Contact {
+/* .About, .Contact {
   padding: 0 30px;
   margin-top: 40px;
-}
+  background-image: none;
+} */
 
 form {
   width: 94vw;
@@ -300,7 +321,7 @@ label {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin: 12vh 0;
 }
 
 /* Project Component */
@@ -361,7 +382,7 @@ label {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .resume-btn-container {
@@ -502,9 +523,9 @@ footer div {
     width: 680px;
   }
 
-  .Resume {
+  /* .Resume {
     margin-top: 50px;
-  }
+  } */
 
   .center-legend {
     margin-inline: auto;
@@ -539,7 +560,7 @@ footer div {
 
   /* Forms */
   .Contact, .About, .Bio, .Resume {
-    padding: 0;
+    /* padding: 0; */
     display: flex;
     justify-content: center;
   }
@@ -562,9 +583,9 @@ footer div {
     font-size: 1.3rem;
   }
 
-  .Resume {
+  /* .Resume {
     margin-top: 30px;
-  }
+  } */
 
   .skills-text {
     width: 100%;
