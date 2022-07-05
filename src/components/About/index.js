@@ -5,12 +5,12 @@ import { IconContext } from "react-icons";
 import { AiFillHeart } from "react-icons/ai";
 
 function About() {
-  const [bioImg] = useState([
-    {
-      src: 'portrait.png',
-      alt: 'Stevie'
-    }
-  ]);
+  // const [bioImg] = useState([
+  //   {
+  //     src: 'portrait.png',
+  //     alt: 'Stevie'
+  //   }
+  // ]);
 
   let [ readMore, setReadMore ] = useState(false);
 
@@ -25,7 +25,7 @@ function About() {
     <section className="About">
 
       <form className="about-form">
-
+{/* 
         <div className="profile">
           <div className="profile-img-holder">
             <img
@@ -35,23 +35,7 @@ function About() {
             />
           </div>
 
-          <div className="profile-txt-holder">
-            <div className="profile-txt">
-              <span className="indent">"Full</span> stack web developer leveraging
-              over a decade of experience in audio engineering to provide
-              creative solutions in website development and design. Recently
-              earning a certificate from the Code Bootcamp at UT Austin,
-              specializing in JavaScript and the MERN stack, Stephen is ready to offer excellent
-              time management, work ethic, and attention to detail to a wide
-              range of professional projects. Being flexible, reliable, quick to adapt,
-              and known by colleagues as friendly and easy to work with
-              in both large and small scale teams, as well as highly responsible
-              and productive when working independently, Stephen is excited to
-              apply his experience and passion in the diverse field of web
-              development."
-            </div>
-          </div>
-        </div>
+        </div> */}
 
         <fieldset className="about-bio">
           <legend>
