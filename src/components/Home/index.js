@@ -19,7 +19,13 @@ function Home() {
                 apply his experience and passion in the diverse field of web
                 development." */}
                 <p>
-                  <span className="indent">I'm</span> so glad you're here - feel free to explore my projects, my resume, my story, and check out my <a href="https://github.com/strudelAndCoffee" target="_blank" rel="noreferrer">GitHub</a> and <a href="https://www.linkedin.com/in/stevie-trudell-atx/" target="_blank" rel="noreferrer">LinkedIn</a> profiles, or reach out to me directly to learn more. Thanks for dropping by!
+                  I'm so glad you're here! Please have a look at my projects, resume, my story, and check out my <a href="https://github.com/strudelAndCoffee" target="_blank" rel="noreferrer">GitHub</a> and <a href="https://www.linkedin.com/in/stevie-trudell-atx/" target="_blank" rel="noreferrer">LinkedIn</a> profiles, or reach out to me directly to learn more.
+                </p>
+                <p>
+                  This website is a work in progress, so feel free to check back on occasion to see how it develops while I hone my technique. 
+                </p>
+                <p>
+                  Thanks for dropping by!
                 </p>
                 <p>
                   Stay weird,

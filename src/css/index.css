@@ -263,7 +263,8 @@ label {
 }
 
 .profile-txt p {
-  padding: 6px 0;
+  text-align: center;
+  padding: 6px 3px 6px 0;
   font-size: 1rem;
   font-weight: lighter;
   /* font-style: italic; */
@@ -590,6 +591,10 @@ footer div {
 
   .nav-link {
     font-size: 1.2rem;
+  }
+
+  main {
+    padding-bottom: 20vh;
   }
 
   legend {
