@@ -64,8 +64,8 @@
 body { 
   font-size: 1.1rem;
   background-image: url('../assets/images/carlos-alfonso-skyline-clip-resize-bw-tall.png');
-  background-position: center top;
-  /* background-attachment: fixed; */
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -166,7 +166,8 @@ nav {
 
 /* Main */
 main {
-  padding: 10vh 0;
+  padding-top: 10vh;
+  padding-bottom: 28vh;
 }
 
 /* Form Components */
@@ -551,20 +552,6 @@ footer div {
 }
 
 @media screen and (min-width: 512px) {
-  /* .profile {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    width: 90%;
-  } */
-
-  body {
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
   .about-bio {
     width: 94vw;
   }
@@ -573,6 +560,7 @@ footer div {
 @media screen and (min-width: 720px) {
   body {
     background-image: url('../assets/images/carlos-alfonso-skyline-clip-resize-bw.png');
+    background-position: center top;
   }
 
   /* Header */
