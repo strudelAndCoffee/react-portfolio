@@ -22,13 +22,11 @@ function Project(props) {
                 />
             </a>
             <a className="app-title" href={appUrl} target="_blank" rel="noreferrer">
-                <span>
-                    {appTitle}
-                </span>
+                {appTitle}
             </a>
             <br />
             <a className="link" href={githubUrl} target="_blank" rel="noreferrer">
-                <IconContext.Provider value={{ size: '0.9em' }}>
+                <IconContext.Provider value={{ size: '1em' }}>
                     <GoMarkGithub />
                 </IconContext.Provider>
                 <span className="indent-xs">View</span> GitHub Repository

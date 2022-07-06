@@ -43,7 +43,7 @@ function About() {
           </legend> */}
           
           <article className="about-bio">
-            <h3 className="about-header">Long Story Short...</h3>
+            <h3 className="about-header">Long story short...</h3>
               <p>
                 <span className="indent">I</span> was born and raised in Austin, Texas, and still call it home. The person I am today was shaped by this city, my family, the lifelong friends I've made here, and the city's many communities, as is evident in my history thus far.
               </p>
@@ -59,7 +59,7 @@ function About() {
               </p>
           {readMore && (
             <>
-              <p>
+              <p className="big-font">
                 ~ ~ ~ ~ ~ ~ ~
               </p>
               <br />
