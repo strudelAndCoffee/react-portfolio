@@ -119,12 +119,6 @@ function Contact() {
             {blankForm
             ? <form id="contact-form" onSubmit={submitHandler}>
                 <fieldset>
-                    {/* <legend>
-                        <span className="color-2">Contact</span>
-                    </legend> */}
-                    <div>
-                        <small><em>Note: this form is currently out of order.</em></small>
-                    </div>
                     <label htmlFor="name">Your Name</label>
                     <input
                         type="text"
