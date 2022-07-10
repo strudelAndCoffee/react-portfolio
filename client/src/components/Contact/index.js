@@ -1,6 +1,8 @@
 // CONTACT
 
 import React, { useState, useRef } from 'react';
+import { IconContext } from "react-icons";
+import { FaSmileBeam } from "react-icons/fa";
 
 function Contact() {
 
@@ -156,6 +158,9 @@ function Contact() {
                 </fieldset>
              </form>
             : <div className="contact-msg-success">
+                <IconContext.Provider value={{ size: "1.5rem" }}>
+                    <FaSmileBeam />
+                </IconContext.Provider>
                 Thank you for reaching out! Please allow me a couple business days to review your message, and I will get back to you as soon as I can.
                 <br />
                 ~Stevie
