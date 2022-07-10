@@ -155,7 +155,7 @@ function Contact() {
                     <button type="submit" className="form-btn" onClick={submitHandler}>Submit</button>
                 </fieldset>
              </form>
-            : <div className="align-txt-center">
+            : <div className="contact-msg-success">
                 Thank you for reaching out! Please allow me a couple business days to review your message, and I will get back to you as soon as I can.
                 <br />
                 ~Stevie

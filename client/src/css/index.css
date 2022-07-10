@@ -422,6 +422,15 @@ label {
   animation-timing-function: ease-in-out;
 }
 
+/* Contact Component */
+.contact-msg-success {
+  width: 780px;
+  margin-top: 10vh;
+  padding: 5px 2px 5px 15px;
+  background-color: var(--fieldset-bg-color);
+  text-align: center;
+}
+
 /* Resume Component */
 
 .Resume {
