@@ -14,7 +14,7 @@ function Resume() {
             </div>
             <div className="resume-btn-container">
                 <div class="resume-btn">
-                    <a href="./assets/docs/Resume_Trudell,Stephen.pdf" download="Resume_Trudell,Stephen">
+                    <a href="./assets/docs/Resume-public_Trudell,Stephen.pdf" download="Resume-public_Trudell,Stephen">
                         <FontAwesomeIcon icon={regular('file')} /> Download
                     </a>
                 </div>
