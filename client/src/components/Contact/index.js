@@ -155,6 +155,7 @@ function Contact() {
                 <IconContext.Provider value={{ size: "1.5rem" }}>
                     <FaSmileBeam />
                 </IconContext.Provider>
+                <br />
                 Thank you for reaching out! Please allow me a couple business days to review your message, and I will get back to you as soon as I can.
                 <br />
                 ~Stevie
