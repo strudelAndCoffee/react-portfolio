@@ -5,12 +5,6 @@ import { IconContext } from "react-icons";
 import { AiFillHeart } from "react-icons/ai";
 
 function About() {
-  // const [bioImg] = useState([
-  //   {
-  //     src: 'portrait.png',
-  //     alt: 'Stevie'
-  //   }
-  // ]);
 
   let [ readMore, setReadMore ] = useState(false);
 
@@ -19,28 +13,19 @@ function About() {
     e.target.className = "disappear";
     e.target.innerHTML = "<span></span>";
     setReadMore(true);
+
+    try {
+      fetch('http://localhost:3001/api/readmore', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      })
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   return (
     <section className="About">
-
-      {/* <form className="about-form"> */}
-{/* 
-        <div className="profile">
-          <div className="profile-img-holder">
-            <img
-              src={require(`../../assets/images/${bioImg[0].src}`)}
-              alt={bioImg[0].alt}
-              className="profile-img"
-            />
-          </div>
-
-        </div> */}
-
-        {/* <fieldset className="about-bio"> */}
-          {/* <legend>
-            <span className="color-2">About Me</span>
-          </legend> */}
           
           <article className="about-bio">
             <h3 className="about-header">Long story short...</h3>
