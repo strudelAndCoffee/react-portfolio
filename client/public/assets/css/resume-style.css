@@ -190,7 +190,7 @@ legend {
 .about-text {
     font-size: var(--font-size-xs);
     padding-top: 10px;
-    padding-bottom: 6px;
+    padding-bottom: 10px;
     padding-right: 8px;
     color: snow;
 }
