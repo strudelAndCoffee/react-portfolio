@@ -1,10 +1,11 @@
 :root {
-    --icon-color: rgb(33, 76, 204);
-    --header-color: darkslateblue;
+    --icon-color: rgb(58, 108, 255);
+    --header-color: rgb(0, 78, 152);
     --year-color: slateblue;
-    --font-size-lg: 19px;
-    --font-size-md: 18px;
+    --font-size-lg: 22px;
+    --font-size-md: 19px;
     --font-size-sm: 17px;
+    --font-size-xs: 17px;
 }
 
 * {
@@ -22,7 +23,7 @@ body {
 
 .page {
     background-color: white;
-    /* height: 1100px; */
+    height: 1100px;
     width: 850px;
     border: 1px solid black;
     margin-inline: auto;
@@ -34,7 +35,7 @@ li {
 }
 
 a {
-    color: var(--header-color);
+    color: var(--year-color);
     text-decoration: none;
 }
 
@@ -42,8 +43,20 @@ em {
     font-size: 19px;
 }
 
+.mb {
+    margin-bottom: 5px;
+}
+
+.pad {
+    padding-bottom: 8px;
+}
+
 .indent {
     padding-left: 45px;
+}
+
+.indent-sm {
+    padding-left: 0px;
 }
 
 .fa-award {
@@ -60,25 +73,34 @@ em {
 
 /* Header */
 header {
-    background-image: linear-gradient(to right, black, lightslategray, white);
+    background-image: linear-gradient(to right, black, rgb(20, 32, 43), rgb(53, 76, 98));
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
+}
+
+.header-left {
+    width: 41%;
+}
+
+.header-right {
+    width: 59%;
 }
 
 .header-name {
     color: whitesmoke;
-    font-size: 57px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 16px; 
+    font-size: 49px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px; 
 }
 
 .header-info {
-    padding-right: 10px;
-    padding-top: 8px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+    padding-top: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .header-icons {
@@ -128,7 +150,7 @@ main {
 }
 
 .main-col-left {
-    width: 49%;
+    width: 50%;
 }
 
 .main-col-right {
@@ -137,10 +159,9 @@ main {
 
 /* Fields */
 .field {
-    width: 91%;
+    width: 89%;
     margin-inline: auto;
     margin-top: 3px;
-    /* margin-bottom: 5px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -155,7 +176,7 @@ main {
 legend {
     margin-left: 15px;
     padding: 0 15px;
-    color: var(--year-color);
+    color: var(--header-color);
     font-size: var(--font-size-lg);
     font-weight: bold;
 }
@@ -167,7 +188,11 @@ legend {
 
 /* About */
 .about-text {
-    padding: 8px 10px 5px 12px;
+    font-size: var(--font-size-xs);
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-right: 8px;
+    color: snow;
 }
 
 .about-start {
@@ -193,7 +218,6 @@ legend {
 }
 
 .school {
-    /* font-weight: bold; */
     font-style: italic;
     font-size: var(--font-size-md);
 }
@@ -246,7 +270,6 @@ legend {
 }
 
 .link-font {
-    /* padding-left: 19px; */
     font-size: 17px;
     color: var(--year-color);
 }
@@ -259,7 +282,6 @@ legend {
 .work {
     border: none;
     border-top: 1px solid black;
-    /* margin: 5px 0 6px 0; */
     padding: 0;
     width: 80%;
 }
@@ -285,7 +307,7 @@ footer {
     width: 100%;
     background-image: linear-gradient(to bottom right, white, whitesmoke, lightslategray);
     padding-top: 7px;
-    padding-bottom: 1px;
+    padding-bottom: 10px;
 }
 
 /* Links */
@@ -304,7 +326,7 @@ footer {
 
 .links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
 }
 
@@ -321,10 +343,10 @@ footer {
     text-align: left;
 }
 
-.urls p, .space p, .icons p {
-    padding-bottom: 3px;
+.urls p a {
+    color: var(--header-color);
 }
 
-.space p, .icons p {
-    padding-top: 1px;
+.urls p, .space p, .icons p {
+    padding-bottom: 5px;
 }

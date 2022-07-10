@@ -152,6 +152,7 @@ function Contact() {
                 </fieldset>
              </form>
             : <div className="contact-msg-success">
+                <br />
                 <IconContext.Provider value={{ size: "1.5rem" }}>
                     <FaSmileBeam />
                 </IconContext.Provider>
