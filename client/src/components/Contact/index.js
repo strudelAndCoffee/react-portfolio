@@ -67,7 +67,7 @@ function Contact() {
         if (formState.name.length && formState.email.length && formState.message.length) {
             try {
                 const { name, email, message } = formState;
-                const response = fetch('https://strudel-and-coffee.herokuapp.com/api/contact', {
+                const response = fetch('/api/contact', {
                     method: 'POST',
                     body: JSON.stringify({
                         name: name,

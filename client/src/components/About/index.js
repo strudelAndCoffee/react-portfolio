@@ -15,7 +15,7 @@ function About() {
     setReadMore(true);
 
     try {
-      fetch('https://strudel-and-coffee.herokuapp.com/api/readmore', {
+      fetch('/api/readmore', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }
       })
