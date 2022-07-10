@@ -9,7 +9,7 @@ function Resume() {
         <section className="Resume">
             <div className="resume-btn-container">
                 <div class="resume-btn">
-                    <a href="./resume-full.html">View Full Resume</a>
+                    <a href="./resume-full.html" target="_blank" rel="noreferrer">View Full Resume</a>
                 </div>
             </div>
             <div className="resume-btn-container">
