@@ -129,6 +129,10 @@ header {
     color: var(--icon-color);
 }
 
+.email-link {
+    color: whitesmoke;
+}
+
 /* Main */
 
 main {
@@ -190,7 +194,7 @@ legend {
 .about-text {
     font-size: var(--font-size-xs);
     padding: 10px 5px;
-    color: snow;
+    color: whitesmoke;
 }
 
 .about-start {

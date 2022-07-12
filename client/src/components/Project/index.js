@@ -1,6 +1,6 @@
 // PROJECT
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { IconContext } from "react-icons";
 import { GoMarkGithub } from "react-icons/go";
 
@@ -13,23 +13,27 @@ function Project(props) {
         githubUrl
     } = props;
 
-    const [isLoading, setIsLoading] = useState(true);
+    // const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        setTimeout(() => setIsLoading(false), 1000)
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => setIsLoading(false), 1000)
+    // }, [])
 
     return(
         <div className="Project">
             <a className="img-link" href={appUrl} target="_blank" rel="noreferrer">
-                {isLoading ?
+                {/* {isLoading ?
                 (<div className='img-link-load'>
                     Loading...
                 </div>) : (
                 <img 
                     src={require(`../../assets/images/${imgSrc}`)}
                     alt={imgAlt}
-                />)}
+                />)} */}
+                <img 
+                    src={require(`../../assets/images/${imgSrc}`)}
+                    alt={imgAlt}
+                />
             </a>
             <a className="app-title" href={appUrl} target="_blank" rel="noreferrer">
                 {appTitle}
