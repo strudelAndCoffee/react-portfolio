@@ -66,6 +66,7 @@
 
 body { 
   font-size: 1.1rem;
+  background-color: black;
   background-image: url('../assets/images/carlos-alfonso-skyline-clip-resize-bw-tall.png');
   background-position: center;
   background-attachment: fixed;

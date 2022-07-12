@@ -4,3 +4,4 @@ server/node_modules
 package-lock.json
 server/package-lock.json
 node_modules
+backup.sql
