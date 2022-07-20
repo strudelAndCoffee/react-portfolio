@@ -30,10 +30,10 @@ function Resume() {
                             <ul>
                                 <li>Semantic HTML</li>
                                 <li>CSS / SCSS</li>
-                                <li>3rd Party Frameworks / Libraries</li>
-                                <li>JavaScript (ES6)</li>
+                                <li>Bootstrap / Bulma / Tailwind</li>
+                                <li>JavaScript / Typescript</li>
                                 <li className="italic">Reading Documentation</li>
-                                <li>React</li>
+                                <li>React / Next.js</li>
                             </ul>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ function Resume() {
                                 <li>AGILE</li>
                                 <li>OOP / Functional Programming</li>
                                 <li>TDD</li>
-                                <li>Heroku / GitHub</li>
+                                <li>AWS / Heroku / GitHub</li>
                                 <li>Git</li>
                             </ul>
                             </div>
