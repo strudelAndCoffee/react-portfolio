@@ -14,8 +14,8 @@ router.post('/contact', (req, res) => {
     });
 });
 
-router.post('/readmore', (req, res) => {
-    ReadMore.create()
+router.post('/readmore', ({ body }, res) => {
+    ReadMore.create({ type: body.type })
     .then(data => res.json(data))
     .catch(err => {
         console.log(err);

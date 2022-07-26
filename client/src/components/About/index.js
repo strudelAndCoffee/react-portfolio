@@ -17,7 +17,8 @@ function About() {
     try {
       fetch('/api/readmore', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json' },
+        body: { type: 'about-read-more' }
       })
     } catch (err) {
       console.error(err);
