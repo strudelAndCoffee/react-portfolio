@@ -63,8 +63,6 @@ function About() {
             </>
           )}
           </article>
-        {/* </fieldset> */}
-      {/* </form> */}
     </section>
   );
 }

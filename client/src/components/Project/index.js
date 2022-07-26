@@ -13,23 +13,9 @@ function Project(props) {
         githubUrl
     } = props;
 
-    // const [isLoading, setIsLoading] = useState(true);
-
-    // useEffect(() => {
-    //     setTimeout(() => setIsLoading(false), 1000)
-    // }, [])
-
     return(
         <div className="Project">
             <a className="img-link" href={appUrl} target="_blank" rel="noreferrer">
-                {/* {isLoading ?
-                (<div className='img-link-load'>
-                    Loading...
-                </div>) : (
-                <img 
-                    src={require(`../../assets/images/${imgSrc}`)}
-                    alt={imgAlt}
-                />)} */}
                 <img 
                     src={require(`../../assets/images/${imgSrc}`)}
                     alt={imgAlt}
