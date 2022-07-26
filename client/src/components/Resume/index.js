@@ -5,16 +5,53 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { regular } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 function Resume() {
+    function handleSeeFullBtnClick(e) {
+        e.preventDefault();
+
+        try {
+            fetch('/api/readmore', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: { type: 'resume-see-full' }
+            })
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
+    function handleDlBtnClick(e) {
+        e.preventDefault();
+
+        try {
+            fetch('/api/readmore', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: { type: 'resume-dl' }
+            })
+        } catch (err) {
+            console.error(err);
+        }
+    }
+
     return(
         <section className="Resume">
             <div className="resume-btn-container">
                 <div class="resume-btn">
-                    <a href="./resume-full.html" target="_blank" rel="noreferrer">View Full Resume</a>
+                    <a
+                        href="./resume-full.html"
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={handleSeeFullBtnClick}
+                    >View Full Resume</a>
                 </div>
             </div>
             <div className="resume-btn-container">
                 <div class="resume-btn">
-                    <a href="./assets/docs/Resume_Trudell,Stephen.pdf" download="Resume_Trudell,Stephen">
+                    <a
+                        href="./assets/docs/Resume_Trudell,Stephen.pdf"
+                        download="Resume_Trudell,Stephen"
+                        onClick={handleDlBtnClick}
+                    >
                         <FontAwesomeIcon icon={regular('file')} /> Download
                     </a>
                 </div>
