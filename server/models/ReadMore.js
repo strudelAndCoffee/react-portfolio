@@ -10,6 +10,9 @@ ReadMore.init(
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
+        },
+        type: {
+            type: DataTypes.STRING
         }
     },
     {
