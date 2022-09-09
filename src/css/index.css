@@ -561,6 +561,7 @@ footer div {
 .nomatch {
   text-align: center;
   padding-top: 20vh;
+  color: black;
 }
 
 @media screen and (min-width: 512px) {
