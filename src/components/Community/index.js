@@ -6,7 +6,12 @@ function Community() {
             <div className="profile">
                 <div className="profile-txt">
                     <p>
-                        This page is where I plan to post information and links to other projects, community pages, non-profits, local business, and anything that I feel needs to be shared.
+                        <strong>
+                            <i>** This page is under construction **</i>
+                        </strong>
+                    </p>
+                    <p>
+                        This page is where I plan to post information and links to other projects, community pages, non-profits, local businesses, civil rights activism, cultural protection platforms, and anything that I feel needs to be shared.
                     </p>
                     <p>
                         Please return soon!
